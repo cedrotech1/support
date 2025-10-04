@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovate Rwanda Admin - Support Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <div class="bg-white w-64 border-r border-gray-200 flex flex-col h-full">
+            <div class="p-4 border-b border-gray-200">
+                <h1 class="text-xl font-bold text-gray-800">Innovate Rwanda</h1>
+                <p class="text-sm text-gray-500">Admin Panel</p>
+            </div>
+            <nav id="main-nav" class="flex-1 overflow-y-auto py-4">
+                <!-- Navigation will be populated by JavaScript -->
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <!-- Top Bar -->
+            <header class="bg-white border-b border-gray-200 py-3 px-6 flex items-center justify-between">
+                <div class="flex-1 max-w-2xl">
+                    <div class="relative">
+                        <input type="text" placeholder="Search..." 
+                               class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    </div>
+                </div>
+                <div class="ml-4 flex items-center">
+                    <button class="p-2 text-gray-500 hover:text-gray-700">
+                        <i class="far fa-bell text-xl"></i>
+                    </button>
+                    <div class="ml-4 flex items-center">
+                        <div class="h-8 w-8 rounded-full bg-blue-500 flex items-center justify-center text-white">
+                            <span>AD</span>
+                        </div>
+                        <span class="ml-2 text-sm font-medium text-gray-700">Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <main class="flex-1 overflow-y-auto p-6">
+                <div id="breadcrumbs" class="text-sm text-gray-600 mb-6">
+                    <!-- Breadcrumbs will be populated by JavaScript -->
+                </div>
+                
+                <div id="content" class="bg-white rounded-lg shadow-sm p-6">
+                    <!-- Content will be loaded here -->
+                    <div class="text-center py-12" id="welcome-message">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">Welcome to Support Center</h2>
+                        <p class="text-gray-600">Select a topic from the sidebar to get started</p>
+                    </div>
+                    
+                    <div id="article-content" class="prose max-w-none hidden">
+                        <!-- Article content will be loaded here -->
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Define appData in global scope with only Support Center
+        window.appData = {
+            meta: {
+                schemaVersion: "1.0",
+                version: "v1.0.0",
+                generatedAt: "2025-09-23T12:00:00Z",
+                locale: "en",
+                product: "Innovate Rwanda Admin",
+                defaultPage: "support/index"
+            },
+            navigation: [
+                {
+                    id: "support",
+                    title: "Support Center",
+                    items: [
+                        { title: "Help Center", slug: "support/index", icon: "question-circle" },
+                        { title: "Contact Support", slug: "support/contact", icon: "envelope" }
+                    ]
+                }
+            ]
+        };
+
+        // Load data and initialize the app
+        const init = async () => {
+            try {
+                const response = await fetch('data.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    window.appData = { ...window.appData, ...data };
+                    console.log('Data loaded successfully');
+                }
+            } catch (error) {
+                console.error('Error loading data, using default data:', error);
+            }
+
+            // Load the main script
+            console.log('Loading main script...');
+            const script = document.createElement('script');
+            script.src = 'script.js';
+            script.onload = () => {
+                console.log('Main script loaded, initializing app...');
+                if (window.initApp) {
+                    window.initApp();
+                } else {
+                    console.error('initApp function not found');
+                }
+            };
+            script.onerror = (e) => {
+                console.error('Error loading script.js:', e);
+            };
+            document.body.appendChild(script);
+        };
+
+        // Start initialization when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    </script>
+</body>
+</html>
