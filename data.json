@@ -1,611 +1,674 @@
 {
-    "meta": {
-        "schemaVersion": "1.0",
-        "version": "v1.0.0",
-        "generatedAt": "2025-10-04T12:00:00Z",
-        "locale": "en",
-        "product": "Innovate Rwanda Admin",
-        "defaultPage": "support:index"
-    },
-    "theme": {
-        "css": "/* optional: add typography, callouts, code blocks */",
-        "tokens": {
-            "--brand-bg": "#0B5FFF",
-            "--brand-fg": "#FFFFFF",
-            "--ink": "#0F172A",
-            "--muted": "#64748B"
-        }
-    },
-    "navigation": [
-        {
-            "id": "platform",
-            "title": "Platform",
-            "items": [
-                { "title": "Dashboard", "slug": "platform/dashboard", "icon": "Home" },
-                {
-                    "title": "Companies",
-                    "slug": "platform/companies",
-                    "icon": "Briefcase",
-                    "items": [
-                        {
-                            "title": "Insights",
-                            "slug": "platform/companies/insights",
-                            "icon": "LineChart"
-                        },
-                        {
-                            "title": "Directory",
-                            "slug": "platform/companies/directory",
-                            "icon": "Building2"
-                        }
-                    ]
-                },
-                {
-                    "title": "Investors",
-                    "slug": "platform/investors",
-                    "icon": "Landmark",
-                    "items": [
-                        {
-                            "title": "Insights",
-                            "slug": "platform/investors/insights",
-                            "icon": "LineChart"
-                        },
-                        {
-                            "title": "Directory",
-                            "slug": "platform/investors/directory",
-                            "icon": "Landmark"
-                        }
-                    ]
-                },
-                {
-                    "title": "Enablers",
-                    "slug": "platform/enablers",
-                    "icon": "Handshake",
-                    "items": [
-                        {
-                            "title": "Assessment",
-                            "slug": "platform/enablers/assessment",
-                            "icon": "LineChart"
-                        },
-                        { "title": "Hubs", "slug": "platform/enablers/hubs", "icon": "Building2" },
-                        {
-                            "title": "Incubators/Accelerators",
-                            "slug": "platform/enablers/incubators",
-                            "icon": "Rocket"
-                        }
-                    ]
-                },
-                { "title": "Users", "slug": "platform/users", "icon": "Users" },
-                { "title": "Events", "slug": "platform/events", "icon": "CalendarRange" },
-                {
-                    "title": "Opportunities",
-                    "slug": "platform/opportunities",
-                    "icon": "Sparkles",
-                    "items": [
-                        {
-                            "title": "Open calls",
-                            "slug": "platform/opportunities/open-calls",
-                            "icon": "ListIcon"
-                        },
-                        {
-                            "title": "Tenders",
-                            "slug": "platform/opportunities/tenders",
-                            "icon": "FileSignature"
-                        },
-                        {
-                            "title": "Programs",
-                            "slug": "platform/opportunities/programs",
-                            "icon": "Rocket"
-                        }
-                    ]
-                },
-                {
-                    "title": "Newsroom",
-                    "slug": "platform/newsroom",
-                    "icon": "Newspaper",
-                    "items": [
-                        { "title": "News", "slug": "platform/newsroom/news", "icon": "Newspaper" },
-                        {
-                            "title": "Updates",
-                            "slug": "platform/newsroom/updates",
-                            "icon": "ChartPie"
-                        }
-                    ]
-                },
-                { "title": "Content Studio", "slug": "platform/content-studio", "icon": "FileCog" },
-                { "title": "Support", "slug": "support:index", "icon": "GalleryVerticalEnd" },
-                { "title": "Settings", "slug": "platform/settings", "icon": "Settings" }
-            ]
-        }
-    ],
-    "support": {
-        "hero": {
-            "title": "How can we help you?",
-            "subtitle": "Search for an answer or browse our topics"
-        },
-        "categories": [
-            {
-                "title": "1. Getting Started",
-                "items": [
-                    { "id": "user-onboarding", "title": "User onboarding" },
-                    { "id": "profile-setup", "title": "Profile setup" },
-                    { "id": "user-registration", "title": "User registration" },
-                    { "id": "setting-preferences", "title": "Setting preferences" },
-                    { "id": "company-registration", "title": "Company registration steps" }
-                ]
-            },
-            {
-                "title": "2. Security",
-                "items": [
-                    { "id": "password-reset", "title": "Password reset guide" },
-                    { "id": "enable-2fa", "title": "Enable 2FA" },
-                    { "id": "login-activity", "title": "Check login activity" },
-                    { "id": "session-timeout", "title": "Session timeout settings" },
-                    { "id": "login-devices", "title": "Managing login devices" }
-                ]
-            },
-            {
-                "title": "3. Data & Reports",
-                "items": [
-                    { "id": "export-reports", "title": "Export reports" },
-                    { "id": "bulk-import", "title": "Bulk import data" },
-                    { "id": "sharing-reports", "title": "Sharing reports externally" },
-                    { "id": "archiving-data", "title": "Archiving old data" },
-                    { "id": "report-schedules", "title": "Automating report schedules" }
-                ]
-            },
-            {
-                "title": "4. Collaboration",
-                "items": [
-                    { "id": "add-team-members", "title": "Add team members" },
-                    { "id": "role-permissions", "title": "Role-based permissions" },
-                    { "id": "real-time-commenting", "title": "Real-time commenting" },
-                    { "id": "notifications", "title": "Notification settings" },
-                    { "id": "slack-teams", "title": "Integrating Slack/Teams" }
-                ]
-            },
-            {
-                "title": "5. Troubleshooting",
-                "items": [
-                    { "id": "system-status", "title": "Check system status" },
-                    { "id": "emergency-contacts", "title": "Emergency contacts" },
-                    { "id": "ask-question-1", "title": "Ask a question or describe a (1)" },
-                    { "id": "ask-question-2", "title": "Ask a question or describe a (2)" },
-                    { "id": "ask-question-3", "title": "Ask a question or describe a (3)" }
-                ]
-            },
-            {
-                "title": "6. Advanced Features",
-                "items": [
-                    { "id": "keyboard-shortcuts", "title": "Keyboard shortcuts" },
-                    { "id": "api-access", "title": "API access" },
-                    { "id": "custom-templates", "title": "Custom templates" },
-                    { "id": "bulk-import-tools", "title": "Bulk import tools" },
-                    { "id": "system-backup", "title": "System backup options" }
-                ]
-            },
-            {
-                "title": "7. Platform Modules",
-                "items": [
-                    { "id": "companies-insights", "title": "Companies → Insights" },
-                    { "id": "investors-directory", "title": "Investors → Directory" },
-                    { "id": "enablers-assessment", "title": "Enablers → Assessment" },
-                    { "id": "opportunities-tenders", "title": "Opportunities → Tenders" },
-                    { "id": "content-studio-basics", "title": "Content Studio → Basics" }
-                ]
-            }
-        ],
-        "articles": {
-            "user-onboarding": {
-                "id": "user-onboarding",
-                "title": "User onboarding",
-                "format": "md",
-                "updatedAt": "2025-09-18",
-                "tags": ["onboarding", "accounts", "welcome"],
-                "body": "## Overview of User Onboarding\nWelcome to the Innovate Rwanda Admin platform. This comprehensive guide is designed to assist new users, particularly administrators for innovative firms, in becoming productive quickly. The onboarding process ensures a smooth integration into the platform, providing access to essential features for managing the ecosystem.\n\n### Detailed Steps for Onboarding\n1. **Invitation or Registration**: Start by creating an account using a work email. Navigate to the Innovate Rwanda link provided by your organization: https://innovate.uat2.techclick.rw/en. Enter your email and password, then click Login. Upon successful login, you will return to the landing page with your username displayed in the marked space.\n\n2. **Email Verification**: Click the verification link sent to your email to confirm ownership and enhance account security. If the email is not received, check your spam folder or request a resend from the login page.\n\n3. **Profile Setup**: Complete your profile by entering your name, role, and organization details. Adjust personal preferences such as language and time zone to tailor your experience. Access your profile by clicking on your username and selecting Account to view and edit details.\n\n4. **Selecting Workspace or Role**: Choose your ecosystem or team if applicable. For admins, select the appropriate role, such as admin for innovative firms, to unlock relevant features.\n\n5. **Accessing the Admin Dashboard**: Click on your username, then select Dashboard from the dropdown list. This will direct you to the Innovate Rwanda Admin Dashboard, featuring the navigation menu on the left side.\n\n6. **Quick Tour of the Platform**: Explore key sections including the Dashboard, Companies, Investors, Enablers, and Opportunities. The Dashboard provides an ecosystem overview with recent activity summaries, key metrics (e.g., total users, hubs, funding raised, employment figures, active firms, active users, funding rounds, verified hubs), and insights such as program role distribution, programs per hub, and project start trends.\n\n### Common Issues and Solutions\n- **Login Problems**: Utilize the 'Forgot Password?' option on the login screen to reset your password. Enter your email, follow the provided link, and set a new strong password.\n- **Dashboard Access Issues**: Ensure you are logged in with administrative credentials. If the dashboard is not visible, verify your role permissions in the settings.\n- **ESO-Specific Onboarding**: Select the correct role during setup to access features like program management or performance tracking.\n- **Interrupted Onboarding**: The platform preserves session data, allowing you to resume from your last point upon the next login.\n\n> Tip: Administrators can pre-assign roles to expedite access for new users. If you encounter persistent issues, refer to the troubleshooting section or contact support for assistance.\n\n### Best Practices for New Users\n- Familiarize yourself with the navigation menu to quickly access different modules.\n- Regularly update your profile to maintain accurate information.\n- Explore the dashboard metrics to gain insights into the ecosystem's health and activity."
-            },
-            "profile-setup": {
-                "id": "profile-setup",
-                "title": "Profile setup",
-                "format": "md",
-                "updatedAt": "2025-09-19",
-                "tags": ["profile", "settings"],
-                "body": "## Introduction to Profile Setup\nSetting up your profile is a crucial step in personalizing your experience on the Innovate Rwanda Admin platform. This section allows you to manage personal details, ensuring your account is accurate, secure, and tailored to your role.\n\n### Accessing Your Profile\nGo to **Settings → Profile** or click on your username in the top-right corner and select Account. Here, you can update your display name, avatar, job title, bio, email, password, and contact information. Additionally, configure notification preferences and time zone settings.\n\n### Recommendations for Profile Configuration\n- **Avatar Selection**: Use a clear, professional headshot with dimensions of at least 400×400 pixels to enhance your profile's visual appeal.\n- **Bio Creation**: Write a concise, descriptive bio that highlights your role in the ecosystem, such as 'Admin for Innovative Firm'.\n- **Email and Verification**: Set a backup email for important alerts and verify your primary email to secure your account and enable notifications.\n- **Updating Details**: Edit your account information as needed and click 'Save changes' to apply updates.\n\n### Additional Profile Features\n- **Multiple Profiles Management**: Handle various roles (e.g., individual, investor, company) with associated access levels and statuses (e.g., Pending).\n- **Role Assignment View**: Check assigned roles that dictate permissions, including admin-specific access to dashboard features.\n- **Customization Options**: Adjust preferences like language, theme (toggle light/dark mode via the light icon next to the notification bell), and display settings for tables and lists.\n- **Address Management**: Add or update physical addresses for verification and operational purposes.\n- **Session Monitoring**: View active sessions with details on login times, locations, and devices; log out from unwanted sessions to bolster security.\n- **Other Tools**: Manage bookmarks for quick access, notes for reminders, notifications (accessible via the ring bell icon or profile section), groups for role-based management, references, subscriptions, links, applications, and miscellaneous information.\n- **Logout Procedure**: Securely log out by selecting 'Log out' under your profile menu.\n\n> Note: All changes are applied upon saving. If modifications do not take effect, ensure required fields are completed and refresh the page. Email verification is essential for proving account ownership and preventing unauthorized access.\n\n### Best Practices\n- Regularly review and update your profile to reflect current information.\n- Use strong passwords and enable additional security features like 2FA.\n- Customize themes and preferences to improve usability and productivity."
-            },
-            "user-registration": {
-                "id": "user-registration",
-                "title": "User registration",
-                "format": "md",
-                "updatedAt": "2025-09-20",
-                "tags": ["accounts", "signup"],
-                "body": "## Overview of User Registration\nRegistering a new user on the Innovate Rwanda platform is straightforward, whether through an admin invitation or self-signup (if enabled). This process ensures secure access to the platform's features.\n\n### Registration Options\n- **Invitation-Based**: Admins can invite users via the Users section, sending an email with registration instructions.\n- **Self-Signup**: If configured, users can register directly on the platform.\n\n### Step-by-Step Registration Process\n1. **Access the Platform**: Navigate to https://innovate.uat2.techclick.rw/en.\n2. **Enter Details**: Provide your first name, last name, phone number, email address, and create a secure password (combining letters, numbers, and special characters).\n3. **Upload Profile Image**: Optionally upload an image directly or via URL.\n4. **Create Account**: Click 'Create Account' to submit your details. If valid, your account is created.\n\n### Verification and Login\n- **Email Verification**: All new accounts require verification. Click the link in the confirmation email.\n- **Login**: Use your email and password to log in. If forgotten, use 'Forgot Password?' to reset: enter email, follow the link, and set a new password (minimum 12 characters, mixed types).\n\n### Post-Registration Configuration\n- **Preferences Setup**: Configure language, time zone, and other settings in the Preferences section.\n- **Role Selection**: Choose your ecosystem role (e.g., admin) to determine access levels.\n- **Organization Type**: Select or suggest new types if applicable.\n- **Dashboard Access**: Click your username and select Dashboard to enter the admin interface.\n\n### Social Sign-In Options\n- If enabled, use linked accounts (e.g., Google, LinkedIn, GitHub) for faster registration and login.\n\n> Tip: Use strong passwords to enhance security. Admins can reset passwords for users in the Users section. If registration fails, verify email format or check for existing accounts. For admin roles, confirm invitation from the organization.\n\n### Common Issues and Resolutions\n- **No Verification Email**: Check spam folder or request resend.\n- **Invalid Credentials**: Ensure details match registration information.\n- **Role Restrictions**: Contact admin if access is limited post-registration."
-            },
-            "setting-preferences": {
-                "id": "setting-preferences",
-                "title": "Setting preferences",
-                "format": "md",
-                "updatedAt": "2025-09-20",
-                "tags": ["preferences", "notifications", "locale"],
-                "body": "## Introduction to Setting Preferences\nCustomizing preferences on the Innovate Rwanda Admin platform allows users to tailor their experience, improving usability and efficiency. Access this via **Settings → Preferences** or related profile sections.\n\n### Key Preference Options\n- **Language Selection**: Choose from available languages (e.g., English) to suit your locale.\n- **Time Zone Adjustment**: Set your local time zone for accurate timestamps across notifications, sessions, events, and logs.\n- **Theme Customization**: Toggle between light and dark modes using the light icon beside the notification bell on the dashboard.\n- **Display Settings**: Adjust data density for tables, lists, and dashboards; customize columns in directories for better data management.\n- **Notification Configuration**: Control alert types and frequency for system updates, activities, or specific events (e.g., program changes). View notifications via the ring bell icon or profile notifications section.\n\n### Integration with Platform Features\n- **Role-Based Customizations**: Link preferences to your profile roles for admin-specific views, such as enhanced dashboard metrics.\n- **Security Alignment**: Ensure preferences complement security settings like session timeouts and login monitoring.\n- **Content Studio Influence**: Preferences may affect messaging languages or feed displays in the Content Studio.\n\n### Step-by-Step Guide to Updating Preferences\n1. Navigate to **Settings → Preferences**.\n2. Select and modify desired options (e.g., language, theme).\n3. Click 'Save' to apply changes; refresh the page if necessary.\n\n> Pro Tip: Regularly review preferences to optimize your workflow. If options are restricted, verify your role permissions in **Settings → Security → Roles**. Some changes auto-save, but confirm with save buttons where available.\n\n### Best Practices\n- Test changes in a non-critical session to avoid disruptions.\n- Use notifications to stay informed without overload by setting digests.\n- Align theme choices with your working environment for comfort."
-            },
-            "company-registration": {
-                "id": "company-registration",
-                "title": "Company registration steps",
-                "format": "md",
-                "updatedAt": "2025-09-21",
-                "tags": ["companies", "registration"],
-                "body": "## Overview of Company Registration\nRegistering a company on the Innovate Rwanda platform adds it to the ecosystem directory, enabling tracking and collaboration. Access this via **Companies → Directory**.\n\n### Step-by-Step Registration Process\n1. **Navigate to Directory**: Go to **Companies → Directory** and click 'Create Company' in the top-right.\n2. **Enter Basic Information**: Provide legal name, sector, location, contacts, logo URL, description, incorporation number, stage, status, founded year.\n3. **Add Additional Details**: Optionally include pitch deck, links, websites, addresses, milestones, preferences, programs, growth metrics, revenue, company impact, jobs, patents, subscriptions, references.\n4. **Submit for Review**: Click 'Create' to submit; if moderation is enabled, await admin approval.\n\n### Detailed Sections in Registration\n- **Basic Info**: Company name, description, logo upload or URL.\n- **Contact and Status**: Email, phone, website, capacity, established year, operational status.\n- **Facilities and Metadata**: Type, locations, who runs it.\n- **Links and Addresses**: Useful URLs and physical locations.\n- **Milestones and Programs**: Key achievements and linked programs.\n- **Metrics and Impact**: Growth KPIs, revenue, jobs created, patents.\n\n### Post-Registration Management\n- **View Details**: Use the eye icon to see overview, info, links, etc.\n- **Edit Company**: Click the pencil icon to update details; save changes.\n- **Delete Company**: Use the trash icon and confirm deletion.\n\n### Best Practices\n- Ensure all information is accurate for better directory searchability.\n- Link companies to enablers or investors where relevant.\n- Use the search bar to check for existing entries before adding new ones.\n- Customize table columns for efficient management.\n- For multiple registrations, utilize bulk import tools.\n\n> Note: Admins can oversee all companies in the Directory, viewing KPIs like total companies, employees, and average funding. Detailed views include tabs for comprehensive information."
-            },
-            "password-reset": {
-                "id": "password-reset",
-                "title": "Password reset guide",
-                "format": "md",
-                "updatedAt": "2025-09-19",
-                "tags": ["security", "password"],
-                "body": "## Introduction to Password Reset\nResetting your password is essential for maintaining account security, especially if forgotten or compromised. This guide provides detailed steps for the process.\n\n### Step-by-Step Reset Process\n1. **Access Login Page**: Go to https://innovate.uat2.techclick.rw/en and click 'Forgot password'.\n2. **Enter Email**: Provide your registered email and submit to receive a reset link.\n3. **Set New Password**: Follow the link and create a strong password (at least 12 characters, including mixed case, numbers, symbols).\n\n### Admin-Assisted Reset\n- Admins can initiate resets for users via the **Users** section or role permissions.\n\n### Additional Guidance\n- Reset links expire for security; request a new one if needed.\n- After resetting, log in and update your profile or verify email.\n- Integrate with 2FA for added protection.\n- Check sessions in your profile to log out suspicious devices.\n- Update password directly in admin profile under account settings.\n\n### Common Errors and Solutions\n- **Invalid Link**: Use the most recent email link.\n- **Weak Password**: Adhere to strength requirements.\n- **No Email Received**: Check spam or contact support.\n- **Role Restrictions**: Ensure your role permits password management.\n\n> Tip: Regularly update passwords and use unique ones for different platforms to enhance security."
-            },
-            "enable-2fa": {
-                "id": "enable-2fa",
-                "title": "Enable 2FA",
-                "format": "md",
-                "tags": ["security", "2fa", "mfa"],
-                "updatedAt": "2025-09-19",
-                "body": "## Overview of Two-Factor Authentication\nEnabling 2FA adds an extra layer of security to your Innovate Rwanda account, protecting against unauthorized access.\n\n### Setup Steps for 2FA\n1. **Navigate to Security**: Go to **Settings → Security**.\n2. **Enable Option**: Locate and activate the 2FA feature (may require admin privileges).\n3. **Scan QR Code**: Use a TOTP app (e.g., Authy, Google Authenticator) to scan the provided QR code.\n4. **Verify Code**: Enter the generated code to confirm setup.\n5. **Save Recovery Codes**: Store the displayed recovery codes securely.\n\n### Benefits of 2FA\n- Enhances protection beyond passwords.\n- Integrates with email verification, session management, and login logs.\n\n### Troubleshooting 2FA Issues\n- **Lost Device**: Use recovery codes to access and reconfigure.\n- **Sync Problems**: Ensure your device's time is accurate.\n- **Disabling 2FA**: Requires admin approval or support assistance.\n- **Option Not Visible**: Check role permissions in **Security → Roles**.\n\n> Note: 2FA is recommended for all users, especially admins handling sensitive data. Combine with strong passwords and regular session reviews."
-            },
-            "login-activity": {
-                "id": "login-activity",
-                "title": "Check login activity",
-                "format": "md",
-                "tags": ["security", "audit"],
-                "body": "## Monitoring Login Activity\nRegularly reviewing login activity helps detect and prevent unauthorized access to your account.\n\n### Accessing Login Logs\n- Navigate to **Settings → Security → Logs** or profile sessions to view recent sign-ins, IP addresses, and device information.\n\n### Detailed Activity View\n- Logs display login times, locations, and devices, mirroring the sessions section in profiles.\n- Identify suspicious activity, such as logins from unknown locations.\n\n### Available Actions\n- Log out from specific sessions to secure your account.\n- Set up notifications for new login alerts.\n- Export logs for detailed auditing.\n\n### Best Practices for Security\n- Review logs frequently, particularly after password changes.\n- Combine with 2FA and session timeouts for comprehensive protection.\n- Admins can access platform-wide logs in the Security section.\n- If unusual activity is detected, reset your password and contact support immediately.\n\n> Tip: Use this feature in conjunction with device management to maintain account integrity."
-            },
-            "session-timeout": {
-                "id": "session-timeout",
-                "title": "Session timeout settings",
-                "format": "md",
-                "tags": ["security", "session"],
-                "body": "## Configuring Session Timeouts\nSession timeouts are a key security feature that automatically logs out inactive users, preventing unauthorized access.\n\n### Default and Custom Settings\n- The default idle timeout is 30 minutes.\n- Admins can adjust this per workspace in **Settings → Security**.\n\n### Configuration Steps\n- Set timeout duration based on security requirements (shorter for sensitive data).\n- View active sessions with details in profile or security logs.\n\n### Impact on User Experience\n- Protects against access on unattended devices.\n- Requires re-login after timeout, potentially with 2FA.\n\n### Advanced Options\n- Customize timeouts for different roles via permissions settings.\n- Monitor effectiveness through login activity logs.\n- Integrate with device management for enhanced security.\n\n> Note: Balancing security with usability is key; too short timeouts may frustrate users, while longer ones increase risk."
-            },
-            "login-devices": {
-                "id": "login-devices",
-                "title": "Managing login devices",
-                "format": "md",
-                "tags": ["security", "devices"],
-                "body": "## Overview of Device Management\nManaging login devices ensures only authorized devices can access your account, enhancing overall security.\n\n### Viewing and Managing Devices\n- Access via **Settings → Security → Logs** or profile sessions to see remembered devices.\n- Enable device approval for new logins in high-security environments.\n\n### Management Steps\n- Review active devices with associated login details.\n- Revoke access to unwanted or lost devices immediately.\n\n### Key Features\n- Device approval process verifies new devices before granting access.\n- Integration with 2FA and login activity monitoring.\n\n### Tips for Secure Device Management\n- Regularly clear old or unused devices.\n- If a device is lost, revoke access and change your password.\n- Admins can manage devices for other users via the Users section.\n\n> Tip: Combine device management with session timeouts and login logs for a robust security posture."
-            },
-            "export-reports": {
-                "id": "export-reports",
-                "title": "Export reports",
-                "format": "md",
-                "tags": ["reports", "export"],
-                "body": "## Introduction to Exporting Reports\nExporting reports allows you to download data from analytics pages for further analysis or sharing.\n\n### Export Process\n- From pages like Companies Insights, click 'Export' to choose formats (CSV/XLSX) or schedule PDF emails.\n\n### Step-by-Step Guide\n1. Select data range and filters (e.g., sectors, dates).\n2. Choose export format: CSV for data manipulation, PDF for presentations.\n\n### Use Cases\n- Export ESO performance metrics, funding trends, or sector supports.\n- Integrate with external tools like Excel for advanced analysis.\n\n### Limitations and Tips\n- Large datasets may take time to process; schedule during off-peak hours.\n- Ensure you have the necessary permissions; verify roles if access is denied.\n- Combine with bulk import for data management cycles.\n\n> Note: Exported reports can be shared securely using sharing features."
-            },
-            "bulk-import": {
-                "id": "bulk-import",
-                "title": "Bulk import data",
-                "format": "md",
-                "tags": ["import", "csv"],
-                "body": "## Overview of Bulk Import\nBulk import facilitates adding multiple records at once, saving time for large datasets.\n\n### Import Steps\n1. Access the **Bulk Import** tool in directories or integrations (e.g., KoboToolbox - Import).\n2. Download sample CSV templates.\n3. Populate the CSV with data (e.g., hub names, contacts, statuses).\n4. Upload the file, map columns to fields.\n5. Preview for errors and commit the import.\n\n### Best Practices\n- Validate data locally to prevent import failures.\n- For ESOs, include details like facilities and metadata.\n- Handle duplicates by merging or skipping entries.\n\n### Troubleshooting Common Issues\n- **Invalid Formats**: Ensure column headers match the template.\n- **Partial Imports**: Review import logs for failed rows and correct them.\n- **Integration Specifics**: Use in Innovate Rwanda Import-Export for ecosystem-wide data.\n\n> Tip: Bulk import is ideal for initial data population or regular updates; combine with exports for data backups."
-            },
-            "sharing-reports": {
-                "id": "sharing-reports",
-                "title": "Sharing reports externally",
-                "format": "md",
-                "tags": ["reports", "sharing"],
-                "body": "## Secure Report Sharing\nSharing reports externally allows collaboration while maintaining data security through controlled access.\n\n### Sharing Options\n- Generate one-time or time-bound links from export menus.\n- Add passwords and watermarks for PDF files.\n- Set expiration dates and view limits for sensitive information like ESO impacts or performance data.\n\n### Use Cases\n- Share hub overviews or accelerator programs with external collaborators.\n- Allow partners to view data without full platform access.\n\n### Security Features\n- Track views and revoke shares at any time.\n- Use watermarks to deter unauthorized distribution.\n- Align sharing permissions with user roles.\n\n### Step-by-Step Sharing\n1. Export the report and select sharing options.\n2. Configure link settings (expiration, password).\n3. Distribute the link securely.\n\n> Note: Always review content before sharing to ensure compliance with data protection policies."
-            },
-            "archiving-data": {
-                "id": "archiving-data",
-                "title": "Archiving old data",
-                "format": "md",
-                "tags": ["lifecycle", "archive"],
-                "body": "## Data Archiving Policy\nArchiving helps manage platform performance by removing stale data from active views while preserving it for future reference.\n\n### Archiving Process\n- Select items (e.g., old companies, investors) in directories.\n- Move to archive; data becomes hidden but remains searchable in archive sections.\n\n### Benefits of Archiving\n- Improves loading times and search efficiency.\n- Maintains historical records for compliance and analysis.\n\n### Restoration Procedures\n- Access the archive via settings and restore items with a single click.\n- Admins control archive access and permissions.\n- Use system backups for complete data recovery if needed.\n\n> Tip: Regularly archive inactive records to keep the platform optimized; review archive periodically for potential restorations."
-            },
-            "report-schedules": {
-                "id": "report-schedules",
-                "title": "Automating report schedules",
-                "format": "md",
-                "tags": ["automation", "reports"],
-                "body": "## Automating Reports\nScheduling reports ensures regular delivery of key insights without manual intervention.\n\n### Setup Process\n- In analytics pages (e.g., Insights), set frequency (weekly/monthly) and recipients.\n- Customize content to include charts, tables, and summaries (e.g., ESO metrics).\n\n### Features\n- Include trends, distributions, and KPIs.\n- Pause, edit, or delete schedules as required.\n\n### Integration\n- Link schedules to notifications for delivery confirmations.\n- Combine with exports and backups for data management.\n\n### Best Practices\n- Schedule reports during low-usage periods to avoid performance impacts.\n- Review scheduled content regularly to ensure relevance.\n\n> Note: Automated reports help in proactive decision-making by providing timely data."
-            },
-            "add-team-members": {
-                "id": "add-team-members",
-                "title": "Add team members",
-                "format": "md",
-                "tags": ["collaboration", "users"],
-                "body": "## Adding Team Members\nInviting new team members expands collaboration capabilities on the platform.\n\n### Invitation Process\n- Navigate to **Users → Invite**.\n- Enter emails and assign roles (e.g., Viewer, Editor, Admin).\n- Invitees receive links to register and verify their accounts.\n\n### Management Features\n- Track pending invitations and resend if necessary.\n- Group users by roles for organized management.\n\n### Tips for Effective Team Addition\n- Use groups to manage users with similar roles.\n- Ensure new members complete the onboarding process.\n- Admins can adjust roles post-invitation via Security → Roles.\n\n> Note: Pre-assign roles to streamline access; monitor user activity after addition."
-            },
-            "role-permissions": {
-                "id": "role-permissions",
-                "title": "Role-based permissions",
-                "format": "md",
-                "tags": ["rbac", "permissions"],
-                "body": "## Understanding Role-Based Permissions\nRoles define access levels and permissions, ensuring users have appropriate capabilities.\n\n### Standard Roles\n- **User**: Basic read and limited write access.\n- **Admin**: Manage content, users, and settings.\n- **Superadmin**: Full platform-wide control.\n\n### Detailed Permissions\n- **System Roles**: Include Investor, Company Admin, etc.\n- **Ecosystem Roles**: Such as Program Facilitator, Educator.\n- **Permissions List**: Access to settings, user management, content editing, etc.\n\n### Assignment and Management\n- Assign roles during onboarding or in profiles.\n- View roles in the roles tab.\n- Create or edit roles in **Settings → Security → Roles**: Name the role, select permissions, submit.\n- Edit or delete existing roles as needed.\n\n### Auditing and Customization\n- Track changes via activity logs.\n- Fine-tune permissions per module for security.\n\n> Tip: Regularly review roles to align with organizational needs and security policies."
-            },
-            "real-time-commenting": {
-                "id": "real-time-commenting",
-                "title": "Real-time commenting",
-                "format": "md",
-                "tags": ["comments", "collaboration"],
-                "body": "## Using Real-Time Commenting\nReal-time commenting facilitates collaborative discussions on platform content.\n\n### Commenting Usage\n- Mention users with @name in profiles, programs, or overviews.\n- Use threaded comments for organized discussions on performance tabs or partnerships.\n\n### Key Features\n- Live updates and syncing across users.\n- Notifications for mentions to keep participants engaged.\n\n### Best Practices\n- Use comments for feedback on ESO impacts or services.\n- Resolve threads to close discussions and maintain clarity.\n- Integrate with other collaboration tools for comprehensive interactions.\n\n> Note: Comments enhance teamwork; ensure they are professional and relevant."
-            },
-            "notifications": {
-                "id": "notifications",
-                "title": "Notification settings",
-                "format": "md",
-                "tags": ["notifications"],
-                "body": "## Configuring Notifications\nNotifications keep you informed of platform activities and updates.\n\n### Configuration Options\n- Access via profile notifications or the ring bell icon.\n- Set frequencies: immediate or daily digests.\n\n### Notification Types\n- System alerts, reminders, ESO-specific events (e.g., program changes).\n- Personalize in preferences for relevance.\n\n### Management Tools\n- Mark notifications as read or delete old ones.\n- Test settings with sample alerts.\n- Admins configure global notifications in settings.\n\n> Tip: Customize to avoid overload while staying updated on critical events."
-            },
-            "slack-teams": {
-                "id": "slack-teams",
-                "title": "Integrating Slack/Teams",
-                "format": "md",
-                "tags": ["integrations", "slack", "teams"],
-                "body": "## Setting Up Integrations with Slack/Teams\nIntegrating with Slack or Microsoft Teams allows seamless notification delivery to team channels.\n\n### Setup Steps\n- Go to **Settings → Integrations** and authorize the app.\n- Select channels and configure for specific modules (e.g., opportunities, updates).\n\n### Key Features\n- Push activity summaries and alerts for new programs or performance changes.\n- Support for two-way synchronization if available.\n\n### Troubleshooting\n- If disconnected, revoke and re-authorize access.\n- Verify bot permissions in the integrated app.\n- Applicable to other integrations like Zapier for advanced workflows.\n\n> Note: Integrations enhance productivity by centralizing communications."
-            },
-            "system-status": {
-                "id": "system-status",
-                "title": "Check system status",
-                "format": "md",
-                "tags": ["status", "uptime"],
-                "body": "## Monitoring System Status\nChecking system status ensures you're aware of platform availability and any ongoing issues.\n\n### Accessing Status Information\n- Visit **Support → System Status** for real-time uptime and incident history.\n\n### Monitoring Features\n- View current status and past downtime logs.\n- Subscribe to email updates for notifications.\n\n### Use Cases\n- Verify status before performing critical actions like data imports.\n- Report new issues if status indicates problems.\n\n### Additional Resources\n- Integrate with emergency contacts for escalations.\n- Access detailed logs in the Security section.\n\n> Tip: Regular checks help in planning activities around maintenance windows."
-            },
-            "emergency-contacts": {
-                "id": "emergency-contacts",
-                "title": "Emergency contacts",
-                "format": "md",
-                "tags": ["support", "contact"],
-                "body": "## Emergency Support Contacts\nFor critical issues, use these contacts to get prompt assistance.\n\n### Contact Details\n- **Email**: support@example.org\n- **Phone**: +250 700 000 000\n- **Service Level Agreement (SLA)**: P1 issues resolved in 2 hours, P2 in 8 hours, P3 next business day.\n\n### When to Contact\n- Use for urgent problems like login failures, data loss, or system outages.\n- Provide detailed information: screenshots, URLs, steps to reproduce the issue.\n\n### Support Process\n- Choose your preferred contact method.\n- Track your ticket in the support portal.\n\n### Alternative Options\n- For non-urgent queries, use the ask-question articles.\n- Utilize the 'Get in Touch' button in the support section.\n\n> Note: Include as much detail as possible to expedite resolution."
-            },
-            "ask-question-1": {
-                "id": "ask-question-1",
-                "title": "Ask a question or describe a (1)",
-                "format": "md",
-                "body": "## Submitting a Support Question\nDescribe your issue clearly to receive effective assistance.\n\n### Submission Guidelines\n- Be specific: e.g., 'I can't edit hub details—receiving error message X'.\n- Include relevant context like your role or the module affected.\n\n### Expected Response\n- Support will reply within the SLA timeframe.\n- Follow up if additional information is needed.\n\n> Tip: Clear descriptions lead to faster resolutions."
-            },
-            "ask-question-2": {
-                "id": "ask-question-2",
-                "title": "Ask a question or describe a (2)",
-                "format": "md",
-                "body": "## Enhanced Support Query Submission\nInclude visual aids for better understanding.\n\n### Reporting with Details\n- Attach screenshots of errors or issues.\n- Note your browser and version for technical problems.\n\n### Benefits\n- Visuals help support diagnose issues more quickly.\n\n> Note: Use this for complex issues requiring evidence."
-            },
-            "ask-question-3": {
-                "id": "ask-question-3",
-                "title": "Ask a question or describe a (3)",
-                "format": "md",
-                "body": "## Follow-Up Support Queries\nWe provide email follow-ups for ongoing issues.\n\n### Follow-Up Process\n- Provide your email for detailed responses.\n- Check spam folders if no reply is received.\n\n### Escalation\n- For urgent matters, use emergency contacts.\n\n> Tip: Reference previous tickets in follow-ups."
-            },
-            "keyboard-shortcuts": {
-                "id": "keyboard-shortcuts",
-                "title": "Keyboard shortcuts",
-                "format": "md",
-                "tags": ["productivity", "shortcuts"],
-                "body": "## Utilizing Keyboard Shortcuts\nShortcuts improve navigation and efficiency on the platform.\n\n### Common Shortcuts\n- `/`: Focus on search bar.\n- `g c`: Go to Companies section.\n- `g i`: Go to Investors section.\n- `?`: Open help menu.\n\n### Additional Shortcuts\n- `e`: Edit current page or item.\n- `s`: Save changes.\n- `n`: Create new item (e.g., program).\n\n### Customization and Learning\n- Enable shortcuts in preferences.\n- Learn more via the help overlay or documentation.\n\n> Note: Shortcuts can be platform-specific; test in your environment."
-            },
-            "api-access": {
-                "id": "api-access",
-                "title": "API access",
-                "format": "md",
-                "tags": ["api", "developers"],
-                "body": "## Accessing the API\nThe API enables programmatic interactions with the platform.\n\n### Getting Started with API\n- Request an API key in **Settings → Integrations**.\n- Keys have rate limits and scopes (e.g., read/write for enablers).\n\n### API Documentation\n- Endpoints available for profiles, dashboards, data fetch.\n- Authenticate requests using the provided key.\n\n### Limits and Usage\n- Default limit: 1000 calls per hour; request increases for higher needs.\n- Paste API credentials in integrations like RDB for setup.\n\n> Tip: Use API for automations and integrations; refer to docs for details."
-            },
-            "custom-templates": {
-                "id": "custom-templates",
-                "title": "Custom templates",
-                "format": "md",
-                "tags": ["templates"],
-                "body": "## Creating Custom Templates\nTemplates ensure consistency in reports, messages, and content.\n\n### Template Creation\n- Access via **Content Studio → Messaging**.\n- Design templates for specific uses, including placeholders for dynamic data.\n\n### Usage Instructions\n- Apply templates to new items for uniform formatting.\n- Edit or share templates with team members.\n\n### Advanced Features\n- Use HTML for styled email templates.\n- Integrate with exports and sharing for enhanced functionality.\n\n> Note: Templates streamline workflows; update them as needs evolve."
-            },
-            "bulk-import-tools": {
-                "id": "bulk-import-tools",
-                "title": "Bulk import tools",
-                "format": "md",
-                "tags": ["import", "tools"],
-                "body": "## Using Bulk Import Tools\nBulk import tools allow efficient data entry for multiple records.\n\n### Tool Overview\n- Download sample CSVs and validate formats locally.\n- Supports ESO data, companies, investors, etc.\n\n### Import Process\n- Upload via **Integrations** (e.g., KoboToolbox).\n- Map columns, preview, and rollback if errors occur.\n\n### Integration\n- Combine with archiving and backups for complete data management.\n\n> Tip: Ideal for large datasets; ensure data accuracy before import."
-            },
-            "system-backup": {
-                "id": "system-backup",
-                "title": "System backup options",
-                "format": "md",
-                "tags": ["backup", "disaster-recovery"],
-                "body": "## System Backup and Recovery\nBackups protect against data loss and enable recovery.\n\n### Backup Options\n- Daily snapshots retained for 30 days.\n- Manual backups available via admin settings.\n- Cloud storage integrations for off-site storage.\n\n### Recovery Process\n- Restore from snapshots in case of issues.\n- Test restores periodically to ensure viability.\n\n### Best Practices\n- Schedule backups alongside automated reports.\n- Contact support for full data exports if needed.\n\n> Note: Regular backups are essential for business continuity."
-            },
-            "companies-insights": {
-                "id": "companies-insights",
-                "title": "Companies → Insights",
-                "format": "md",
-                "tags": ["companies", "insights", "metrics"],
-                "body": "## Exploring Companies Insights\nAccess this section via the left navigation menu: **Companies → Insights**. It provides key statistics and visual analyses for ventures, founders, and technologies in the ecosystem.\n\n### Summary Metrics\n- **Number of Ventures**: Total registered companies.\n- **Number of Co-founders**: Total individuals involved as co-founders.\n- **Average Co-founders per Venture**: Statistical average.\n- **Gender Distribution**: Breakdown by gender categories.\n\n### Insights and Visualizations\n- **Expansion/Operating Countries**: Interactive maps showing geographical spread.\n- **Technology Analysis**: Bar charts for categories like software, AI, hardware.\n- **Additional Insights**: Funding trends, sector distributions (navigate via dots for more views).\n\n### Venture Assessment Table\n- Searchable table including venture name, sectors, technologies, founded year, funding, team size, climate focus, status.\n- Features: Search bar, filter dropdowns (All, Active, Pending, Suspended, Deleted), column customization, three-dot menu for actions (View Assessment, View Website).\n- Admins have access to advanced filters and cohort comparisons.\n\n> Tip: Use insights to identify trends and opportunities in the company ecosystem."
-            },
-            "investors-directory": {
-                "id": "investors-directory",
-                "title": "Investors → Directory",
-                "format": "md",
-                "tags": ["investors", "directory"],
-                "body": "## Comprehensive Guide to Investors Directory\nThe Investors Directory allows admins to manage and browse investor profiles, including funds, angels, and development finance institutions (DFIs). Track investment theses, ticket sizes, and geographical focus. Access this section via the left navigation: **Investors → Directory**.\n\n### Navigation and Interface Overview\n- **Add Investor Button**: Located in the top-right corner for creating new entries.\n- **Search Bar**: Above the table to filter investors by name or other criteria.\n- **Investor Table**: Displays columns such as:\n  - Name (with logo)\n  - Type (e.g., Investment Fund)\n  - Visibility (e.g., Private)\n  - Verified (e.g., Unverified)\n  - Status (e.g., ACTIVE)\n  - Actions (View 👁, Edit ✏️, Delete 🗑)\n\n#### Screenshot Description\nThe interface shows a clean table layout with searchable and customizable columns, as depicted in the platform screenshot where investors like 'Khaki Ventures' are listed with their details and action icons.\n\n### Core Actions in the Directory\n- **Search Investors**: Enter any part of an investor's name in the search bar to filter the list dynamically.\n- **View Investor Details**: Click the eye icon (👁) to open the investor record. This reveals a sidebar with sections like Overview, Profiles, General Info, Addresses, Preferences, Holdings, Portfolio, Instruments, Partnerships, Members, References, Impacts, Metrics, Reputations, Engagement, Feedback, Programs, Links, Resources.\n  - **Overview**: Displays basic information like contact details, organization, status.\n  - **Profiles**: Lists associated profiles with options to add, edit, delete.\n  - **General Info**: Editable fields for description, short bio, contact info.\n  - **Addresses**: Manage multiple addresses with add, edit, delete functions.\n  - **Preferences**: Investor-specific settings like investment preferences.\n  - **Holdings**: Table of holdings with entity name, investment date, amount, type, visibility, status.\n  - **Portfolio**: Details on portfolio entries.\n  - **Instruments**: Financial instruments used by the investor.\n  - **Partnerships**: List of partnerships with add/edit/delete.\n  - **Members**: Team members with roles and contact info.\n  - **References**: Supporting references or documents.\n  - **Impacts**: Impact metrics and reports.\n  - **Metrics**: Performance metrics.\n  - **Reputations**: Reputation scores or feedback.\n  - **Engagement**: Engagement records.\n  - **Feedback**: Collected feedback.\n  - **Programs**: Associated programs.\n  - **Links**: Useful external links.\n  - **Resources**: Attached resources.\n\n#### Screenshot Descriptions for Viewing\n- When viewing, the interface shows editable and deletable entries, as in the screenshot where 'Edit' and 'Delete' icons are visible next to details.\n- Overview tab screenshot: Shows investor logo, type, contact info, website.\n- Profiles tab screenshot: Table for profiles with add button.\n- And similarly for other tabs, with tables or forms for management.\n\n- **Edit Investor Record**: Click the pencil icon (✏️) to update fields like Name, Type, Visibility. Save changes to apply.\n\n#### Steps for Editing\n1. Click the edit icon next to the investor in the table or within a detail tab.\n2. Update the required fields in the form.\n3. Click 'Save changes' to confirm.\n\n#### Screenshot Description\nThe edit form includes fields like Company, Display Name, Profile Image URL, etc., as shown in the platform's edit interface.\n\n- **Delete Investor Record**: Click the trash icon (🗑) and confirm the deletion in the popup.\n\n#### Steps for Deleting\n1. Select the delete icon.\n2. Confirm in the dialog to permanently remove the record.\n\n#### Screenshot Description\nThe confirmation popup warns about deletion, as illustrated.\n\n- **Customize Columns**: If available, show or hide columns to streamline the table view.\n\n#### Steps for Customization\n1. Click 'Customize Columns' dropdown.\n2. Select or deselect columns like Name, Type.\n\n#### Screenshot Description\nThe dropdown menu lists columns with checkboxes, as depicted.\n\n### Creating a New Investor\n1. **Initiate Creation**: Click '+ Add Investor' in the top-right.\n2. **Fill Form Fields**: Enter details such as Company, Display Name, Profile Image URL (upload or URL), Display Email, Display Phone, Website, Visibility, Operational Status, Founded Date, Investor Types.\n3. **Profile Image Handling**: Use URL or upload directly from your device; drag and drop or browse.\n4. **Submit**: Click 'Create' to add the new investor.\n\n#### Screenshot Descriptions\n- Add button highlighted in the directory table.\n- Creation form with fields and upload option for profile image.\n- Upload interface showing drag-and-drop area.\n\n### Integration and Advanced Usage\n- **Link to Partnerships**: Associate investors with partnerships in the dedicated tab.\n- **Bulk Addition**: Use bulk import tools for adding multiple investors at once.\n- **Visibility and Status Management**: Control public visibility and active status to manage directory listings.\n\n### Best Practices\n- Ensure accurate data entry to maintain directory integrity.\n- Regularly verify investor profiles for up-to-date information.\n- Use search and filters to efficiently manage large lists.\n- Customize views to focus on relevant data.\n\n> Note: All actions require appropriate permissions; admins have full control over investor management."
-            },
-            "enablers-assessment": {
-                "id": "enablers-assessment",
-                "title": "Enablers → Assessment",
-                "format": "md",
-                "tags": ["enablers", "eso", "assessment"],
-                "body": "## Guide to Enablers Assessment\nAccess via **Enablers → Assessment** to evaluate ESOs like hubs and incubators using scorecards and KPIs (programs, jobs, cohorts, capital).\n\n### Assessment Interface\n- **ESO Insight Data**: Charts for supported vs. pipeline startups, job creation, program linkages; navigate dots for additional views.\n- **Assessment Table**: Columns for full name, email/phone, organization, actions.\n- Features: Filters, column customization, search bar.\n- **View Person Data**: Details on contact, organization, years operational, mission, ecosystem role, supported sectors/services, flagship programs.\n\n### Managing Hubs\n- Navigate to **Enablers → Hubs**.\n- Table: Organization, founded year, contact, status, actions.\n- Search, customize columns.\n- **Add New Hub**: Step-by-step: basic info (name, logo, description), contact/status (email, phone, website, capacity, year, operational status), facilities/metadata.\n- **Actions**: View details, edit, visit website.\n- **Preview and Confirm**: Review before final creation.\n\n> Tip: Use assessments to track ESO performance and impact."
-            },
-            "opportunities-tenders": {
-                "id": "opportunities-tenders",
-                "title": "Opportunities → Tenders",
-                "format": "md",
-                "tags": ["opportunities", "tenders", "rfp"],
-                "body": "## Managing Tenders in Opportunities\nAccess via **Opportunities → Tenders** to publish and manage RFPs/RFQs.\n\n### Tender Management\n- List: Name, budget, category, status, published/updated dates, actions.\n- **View Website**: Use direction icon.\n- **View Details**: Eye icon for overview (contact, deadline, budget, sectors), info (edit/delete), engagement (add/edit/delete).\n- **Edit Tender**: Update details and save.\n- **Delete Tender**: Confirm deletion.\n- **Create Tender**: Fill form and submit.\n\n### Features\n- Set deadlines, criteria, evaluations.\n- Send notifications for updates.\n\n### Integration\n- Link tenders to programs or events.\n- Use search for efficient management.\n\n> Note: Tenders facilitate vendor bids and admin awards."
-            },
-            "content-studio-basics": {
-                "id": "content-studio-basics",
-                "title": "Content Studio → Basics",
-                "format": "md",
-                "tags": ["cms", "content-studio"],
-                "body": "## Basics of Content Studio\nManage site content, messaging, feeds, and more in **Content Studio**.\n\n### Site Management\n- Edit sections like Hero, About.\n- Select section/language, update title/subtitle/animations.\n- Preview and save changes (auto-saves supported).\n\n### Messaging Tools\n- Manage templates and campaigns.\n- Preview/edit templates (subject, body, placeholders).\n- Use HTML for styled content.\n\n### Additional Tools\n- WYSIWYG editor for easy editing.\n- Version control for tracking changes.\n\n### Use Cases\n- Customize ESO overviews or newsroom content.\n- Ensure consistent messaging across the platform.\n\n> Tip: Use Content Studio for all content-related updates."
-            }
-        },
-        "search": {
-            "strategy": "precomputed",
-            "entries": {
-                "user-onboarding": [
-                    ["onboarding", 6],
-                    ["verify", 2],
-                    ["profile", 1]
-                ],
-                "profile-setup": [
-                    ["profile", 5],
-                    ["avatar", 1],
-                    ["timezone", 1]
-                ],
-                "user-registration": [
-                    ["signup", 4],
-                    ["verification", 3]
-                ],
-                "setting-preferences": [
-                    ["preferences", 4],
-                    ["language", 2],
-                    ["timezone", 2]
-                ],
-                "company-registration": [
-                    ["company", 4],
-                    ["registration", 4],
-                    ["directory", 1]
-                ],
-                "password-reset": [
-                    ["password", 6],
-                    ["reset", 5]
-                ],
-                "enable-2fa": [
-                    ["2fa", 6],
-                    ["totp", 3],
-                    ["security", 2]
-                ],
-                "login-activity": [
-                    ["login", 4],
-                    ["activity", 3],
-                    ["audit", 2]
-                ],
-                "session-timeout": [
-                    ["session", 4],
-                    ["timeout", 3]
-                ],
-                "login-devices": [
-                    ["devices", 4],
-                    ["security", 2]
-                ],
-                "export-reports": [
-                    ["export", 5],
-                    ["reports", 4],
-                    ["csv", 2]
-                ],
-                "bulk-import": [
-                    ["import", 5],
-                    ["csv", 4]
-                ],
-                "sharing-reports": [
-                    ["sharing", 4],
-                    ["reports", 3],
-                    ["links", 2]
-                ],
-                "archiving-data": [
-                    ["archive", 4],
-                    ["lifecycle", 2]
-                ],
-                "report-schedules": [
-                    ["scheduled", 4],
-                    ["reports", 3],
-                    ["email", 2]
-                ],
-                "add-team-members": [
-                    ["invite", 4],
-                    ["users", 3]
-                ],
-                "role-permissions": [
-                    ["roles", 5],
-                    ["permissions", 4],
-                    ["rbac", 3]
-                ],
-                "real-time-commenting": [
-                    ["comments", 5],
-                    ["realtime", 3]
-                ],
-                "notifications": [
-                    ["notifications", 5],
-                    ["email", 2]
-                ],
-                "slack-teams": [
-                    ["slack", 4],
-                    ["teams", 4],
-                    ["integrations", 3]
-                ],
-                "system-status": [
-                    ["status", 4],
-                    ["uptime", 3]
-                ],
-                "emergency-contacts": [
-                    ["emergency", 4],
-                    ["contacts", 3]
-                ],
-                "ask-question-1": [
-                    ["support", 3],
-                    ["question", 2]
-                ],
-                "ask-question-2": [
-                    ["support", 3],
-                    ["screenshots", 2]
-                ],
-                "ask-question-3": [
-                    ["support", 3],
-                    ["email", 2]
-                ],
-                "keyboard-shortcuts": [
-                    ["shortcuts", 5],
-                    ["keyboard", 4]
-                ],
-                "api-access": [
-                    ["api", 6],
-                    ["developers", 3],
-                    ["key", 2]
-                ],
-                "custom-templates": [
-                    ["templates", 4],
-                    ["content", 2]
-                ],
-                "bulk-import-tools": [
-                    ["import", 5],
-                    ["tools", 3]
-                ],
-                "system-backup": [
-                    ["backup", 5],
-                    ["recovery", 3]
-                ],
-                "companies-insights": [
-                    ["companies", 5],
-                    ["insights", 5],
-                    ["metrics", 3]
-                ],
-                "investors-directory": [
-                    ["investors", 5],
-                    ["directory", 4]
-                ],
-                "enablers-assessment": [
-                    ["enablers", 5],
-                    ["assessment", 4],
-                    ["eso", 3]
-                ],
-                "opportunities-tenders": [
-                    ["opportunities", 5],
-                    ["tenders", 5],
-                    ["rfp", 3]
-                ],
-                "content-studio-basics": [
-                    ["content", 4],
-                    ["studio", 4],
-                    ["cms", 3]
-                ]
-            },
-            "stopWords": ["the", "a", "an", "and", "or", "to", "of", "for", "in"]
-        }
+  "meta": {
+    "schemaVersion": "1.0",
+    "version": "v1.0.0",
+    "generatedAt": "2025-10-04T12:00:00Z",
+    "locale": "en",
+    "product": "Innovate Rwanda Admin",
+    "defaultPage": "support:index"
+  },
+  "theme": {
+    "css": "/* optional: add typography, callouts, code blocks */",
+    "tokens": {
+      "--brand-bg": "#0B5FFF",
+      "--brand-fg": "#FFFFFF",
+      "--ink": "#0F172A",
+      "--muted": "#64748B"
     }
+  },
+  "navigation": [
+    {
+      "id": "platform",
+      "title": "Platform",
+      "items": [
+        { "title": "Dashboard", "slug": "platform/dashboard", "icon": "Home" },
+        {
+          "title": "Companies",
+          "slug": "platform/companies",
+          "icon": "Briefcase",
+          "items": [
+            {
+              "title": "Insights",
+              "slug": "platform/companies/insights",
+              "icon": "LineChart"
+            },
+            {
+              "title": "Directory",
+              "slug": "platform/companies/directory",
+              "icon": "Building2"
+            }
+          ]
+        },
+        {
+          "title": "Investors",
+          "slug": "platform/investors",
+          "icon": "Landmark",
+          "items": [
+            {
+              "title": "Insights",
+              "slug": "platform/investors/insights",
+              "icon": "LineChart"
+            },
+            {
+              "title": "Directory",
+              "slug": "platform/investors/directory",
+              "icon": "Landmark"
+            }
+          ]
+        },
+        {
+          "title": "Enablers",
+          "slug": "platform/enablers",
+          "icon": "Handshake",
+          "items": [
+            {
+              "title": "Assessment",
+              "slug": "platform/enablers/assessment",
+              "icon": "LineChart"
+            },
+            {
+              "title": "Hubs",
+              "slug": "platform/enablers/hubs",
+              "icon": "Building2"
+            },
+            {
+              "title": "Incubators/Accelerators",
+              "slug": "platform/enablers/incubators",
+              "icon": "Rocket"
+            }
+          ]
+        },
+        { "title": "Users", "slug": "platform/users", "icon": "Users" },
+        {
+          "title": "Events",
+          "slug": "platform/events",
+          "icon": "CalendarRange"
+        },
+        {
+          "title": "Opportunities",
+          "slug": "platform/opportunities",
+          "icon": "Sparkles",
+          "items": [
+            {
+              "title": "Open calls",
+              "slug": "platform/opportunities/open-calls",
+              "icon": "ListIcon"
+            },
+            {
+              "title": "Tenders",
+              "slug": "platform/opportunities/tenders",
+              "icon": "FileSignature"
+            },
+            {
+              "title": "Programs",
+              "slug": "platform/opportunities/programs",
+              "icon": "Rocket"
+            }
+          ]
+        },
+        {
+          "title": "Newsroom",
+          "slug": "platform/newsroom",
+          "icon": "Newspaper",
+          "items": [
+            {
+              "title": "News",
+              "slug": "platform/newsroom/news",
+              "icon": "Newspaper"
+            },
+            {
+              "title": "Updates",
+              "slug": "platform/newsroom/updates",
+              "icon": "ChartPie"
+            }
+          ]
+        },
+        {
+          "title": "Content Studio",
+          "slug": "platform/content-studio",
+          "icon": "FileCog"
+        },
+        {
+          "title": "Support",
+          "slug": "support:index",
+          "icon": "GalleryVerticalEnd"
+        },
+        { "title": "Settings", "slug": "platform/settings", "icon": "Settings" }
+      ]
+    }
+  ],
+  "support": {
+    "hero": {
+      "title": "How can we help you?",
+      "subtitle": "Search for an answer or browse our topics"
+    },
+    "categories": [
+      {
+        "title": "1. Getting Started",
+        "items": [
+          { "id": "user-onboarding", "title": "User onboarding" },
+          { "id": "profile-setup", "title": "Profile setup" },
+          { "id": "user-registration", "title": "User registration" },
+          { "id": "setting-preferences", "title": "Setting preferences" },
+          {
+            "id": "company-registration",
+            "title": "Company registration steps"
+          }
+        ]
+      },
+      {
+        "title": "2. Security",
+        "items": [
+          { "id": "password-reset", "title": "Password reset guide" },
+          { "id": "enable-2fa", "title": "Enable 2FA" },
+          { "id": "login-activity", "title": "Check login activity" },
+          { "id": "session-timeout", "title": "Session timeout settings" },
+          { "id": "login-devices", "title": "Managing login devices" }
+        ]
+      },
+      {
+        "title": "3. Data & Reports",
+        "items": [
+          { "id": "export-reports", "title": "Export reports" },
+          { "id": "bulk-import", "title": "Bulk import data" },
+          { "id": "sharing-reports", "title": "Sharing reports externally" },
+          { "id": "archiving-data", "title": "Archiving old data" },
+          { "id": "report-schedules", "title": "Automating report schedules" }
+        ]
+      },
+      {
+        "title": "4. Collaboration",
+        "items": [
+          { "id": "add-team-members", "title": "Add team members" },
+          { "id": "role-permissions", "title": "Role-based permissions" },
+          { "id": "real-time-commenting", "title": "Real-time commenting" },
+          { "id": "notifications", "title": "Notification settings" },
+          { "id": "slack-teams", "title": "Integrating Slack/Teams" }
+        ]
+      },
+      {
+        "title": "5. Troubleshooting",
+        "items": [
+          { "id": "system-status", "title": "Check system status" },
+          { "id": "emergency-contacts", "title": "Emergency contacts" },
+          {
+            "id": "ask-question-1",
+            "title": "Ask a question or describe a (1)"
+          },
+          {
+            "id": "ask-question-2",
+            "title": "Ask a question or describe a (2)"
+          },
+          {
+            "id": "ask-question-3",
+            "title": "Ask a question or describe a (3)"
+          }
+        ]
+      },
+      {
+        "title": "6. Advanced Features",
+        "items": [
+          { "id": "keyboard-shortcuts", "title": "Keyboard shortcuts" },
+          { "id": "api-access", "title": "API access" },
+          { "id": "custom-templates", "title": "Custom templates" },
+          { "id": "bulk-import-tools", "title": "Bulk import tools" },
+          { "id": "system-backup", "title": "System backup options" }
+        ]
+      },
+      {
+        "title": "7. Platform Modules",
+        "items": [
+          { "id": "companies-insights", "title": "Companies → Insights" },
+          { "id": "investors-directory", "title": "Investors → Directory" },
+          { "id": "enablers-assessment", "title": "Enablers → Assessment" },
+          { "id": "opportunities-tenders", "title": "Opportunities → Tenders" },
+          { "id": "content-studio-basics", "title": "Content Studio → Basics" }
+        ]
+      }
+    ],
+    "articles": {
+      "user-onboarding": {
+        "id": "user-onboarding",
+        "title": "User onboarding",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["onboarding", "accounts", "welcome"],
+        "body": "## Overview of User Onboarding\nWelcome to the Innovate Rwanda Admin platform. This guide is designed to help new admins quickly integrate into the platform and become productive. The onboarding process ensures smooth access to essential features for managing the innovation ecosystem.\n\n### Detailed Steps for Onboarding\n1. **Invitation or Registration**: Create an account using a work email at [Innovate Rwanda](https://innovate.uat2.techclick.rw/en). Enter your email and password, then click **Login**. Your username will appear once logged in successfully.\n2. **Email Verification**: Click the verification link sent to your email. Check your spam folder or request a resend if you don’t receive it.\n3. **Profile Setup**: Complete your profile by entering your name, role, and organization details. Adjust preferences such as language and time zone. Access your profile via your username → **Account**.\n4. **Selecting Workspace or Role**: Choose your team or ecosystem role. Admins should select the admin role to unlock relevant features.\n5. **Accessing the Admin Dashboard**: Click your username → **Dashboard**. Explore the navigation menu on the left.\n6. **Quick Platform Tour**: Key sections include **Dashboard, Companies, Investors, Enablers, Opportunities**. Metrics like total users, hubs, funding, and active firms are displayed. Insights such as program role distribution, programs per hub, and project trends are available.\n\n### Common Issues & Solutions\n- **Login Problems**: Use **Forgot Password?** to reset.\n- **Dashboard Access Issues**: Verify you are logged in with admin credentials.\n- **Interrupted Onboarding**: Session data is saved for resuming later.\n\n> Tip: Admins can pre-assign roles to speed up access for new users.\n\n### Best Practices\n- Explore the navigation menu for quick access.\n- Keep your profile updated.\n- Check dashboard metrics for ecosystem insights."
+      },
+      "profile-setup": {
+        "id": "profile-setup",
+        "title": "Profile setup",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["profile", "settings"],
+        "body": "## Introduction\nSetting up your profile personalizes your experience on the platform and ensures account accuracy and security.\n\n### Accessing Your Profile\nGo to **Settings → Profile** or click your username → **Account**. Update your display name, avatar, job title, bio, email, password, and contact information. Configure notifications and time zone settings.\n\n### Recommendations\n- **Avatar**: Professional headshot (≥400×400 px).\n- **Bio**: Concise, role-specific (e.g., “Admin for Innovative Firm”).\n- **Email Verification**: Essential for security.\n- **Update Details**: Save changes after editing.\n\n### Additional Features\n- Manage multiple profiles/roles with different access levels.\n- View assigned roles dictating permissions.\n- Customize language, theme (light/dark), and display settings.\n- Manage addresses, active sessions, bookmarks, notes, groups, subscriptions.\n- **Logout**: Click **Log out** under your profile menu.\n\n> Note: Ensure required fields are complete. Email verification is essential.\n\n### Best Practices\n- Regularly update your profile.\n- Use strong passwords and enable security features.\n- Customize themes and preferences for comfort and productivity."
+      },
+      "user-registration": {
+        "id": "user-registration",
+        "title": "User registration",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["accounts", "signup"],
+        "body": "## Overview\nNew users can register via **admin invitation** or **self-signup** (if enabled). Registration ensures secure access to platform features.\n\n### Registration Options\n- **Invitation-Based**: Admin invites users via email.\n- **Self-Signup**: Direct registration if allowed.\n\n### Step-by-Step\n1. Navigate to [Innovate Rwanda](https://innovate.uat2.techclick.rw/en).\n2. Provide first name, last name, phone, email, and create a strong password.\n3. Optionally upload a profile image.\n4. Click **Create Account**.\n\n### Verification & Login\n- Verify email via the confirmation link.\n- Login using email and password. Use **Forgot Password?** if needed.\n\n### Post-Registration Configuration\n- Set preferences: language, time zone.\n- Select ecosystem role (e.g., admin).\n- Access the Dashboard via your username → **Dashboard**.\n\n### Social Sign-In Options\n- If enabled, use Google, LinkedIn, GitHub, etc., for registration.\n\n### Common Issues\n- **No Verification Email**: Check spam or request resend.\n- **Invalid Credentials**: Match registration info.\n- **Role Restrictions**: Contact admin for access issues.\n\n> Tip: Use strong passwords. Admins can reset passwords via the Users section."
+      },
+      "setting-preferences": {
+        "id": "setting-preferences",
+        "title": "Setting preferences",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["preferences", "notifications", "locale"],
+        "body": "## Introduction\nCustomizing preferences improves usability and efficiency. Access via **Settings → Preferences**.\n\n### Key Options\n- **Language**: Choose preferred language.\n- **Time Zone**: Set local time zone.\n- **Theme**: Toggle light/dark mode via the icon next to notifications.\n- **Display Settings**: Adjust table/list density, customize columns.\n- **Notifications**: Configure alerts for system updates or events.\n\n### Integration\n- Preferences are linked to roles for admin-specific views.\n- Align with security settings (session timeouts, login monitoring).\n- Preferences may affect messaging or feed displays.\n\n### Updating Preferences\n1. Navigate to **Settings → Preferences**.\n2. Modify options.\n3. Click **Save** and refresh if needed.\n\n### Best Practices\n- Test changes in a non-critical session.\n- Set notification digests to avoid overload.\n- Align theme with working environment."
+      },
+      "company-registration": {
+        "id": "company-registration",
+        "title": "Company registration steps",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["companies", "registration"],
+        "body": "## Overview\nAdd companies to the ecosystem directory via **Companies → Directory** to enable tracking and collaboration.\n\n### Step-by-Step\n1. Navigate to **Directory → Create Company**.\n2. Enter basic info: legal name, sector, location, contacts, logo URL, description, incorporation number, stage, status, founded year.\n3. Add optional details: pitch deck, links, milestones, metrics, revenue, jobs, patents.\n4. Submit for review if moderation is enabled.\n\n### Post-Registration Management\n- **View Details**: Eye icon for overview.\n- **Edit Company**: Pencil icon, save changes.\n- **Delete Company**: Trash icon, confirm deletion.\n\n### Best Practices\n- Ensure accurate info for searchability.\n- Link companies to enablers or investors.\n- Use search bar to avoid duplicates.\n- Customize table columns for efficiency.\n- Bulk import for multiple entries.\n\n> Note: Admins can see KPIs like total companies, employees, and funding metrics."
+      },
+      "password-reset": {
+        "id": "password-reset",
+        "title": "Password reset guide",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["security", "password"],
+        "body": "## Introduction to Password Reset\nResetting your password is essential for maintaining account security, especially if forgotten or compromised. This guide provides detailed steps for the process.\n\n### Step-by-Step Reset Process\n1. **Access Login Page**: Go to [Innovate Rwanda](https://innovate.uat2.techclick.rw/en) and click **Forgot password**.\n2. **Enter Email**: Provide your registered email and submit to receive a reset link.\n3. **Set New Password**: Follow the link and create a strong password (at least 12 characters, including mixed case, numbers, and symbols).\n\n### Admin-Assisted Reset\n- Admins can initiate resets for users via the **Users** section or role permissions.\n\n### Additional Guidance\n- Reset links expire for security; request a new one if needed.\n- After resetting, log in and update your profile or verify email.\n- Enable 2FA for added protection.\n- Check sessions in your profile to log out suspicious devices.\n- Update password directly in admin profile under account settings.\n\n### Common Errors and Solutions\n- **Invalid Link**: Use the most recent email link.\n- **Weak Password**: Follow strength requirements.\n- **No Email Received**: Check spam or contact support.\n- **Role Restrictions**: Ensure your role permits password management.\n\n> Tip: Regularly update passwords and use unique ones for different platforms to enhance security."
+      },
+      "enable-2fa": {
+        "id": "enable-2fa",
+        "title": "Enable 2FA",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["security", "2fa", "mfa"],
+        "body": "## Overview of Two-Factor Authentication\nEnabling 2FA adds an extra layer of security to your Innovate Rwanda account, protecting against unauthorized access.\n\n### Setup Steps for 2FA\n1. **Navigate to Security**: Go to **Settings → Security**.\n2. **Enable Option**: Locate and activate the 2FA feature (may require admin privileges).\n3. **Scan QR Code**: Use a TOTP app (e.g., Authy, Google Authenticator) to scan the provided QR code.\n4. **Verify Code**: Enter the generated code to confirm setup.\n5. **Save Recovery Codes**: Store the displayed recovery codes securely.\n\n### Benefits of 2FA\n- Enhances protection beyond passwords.\n- Integrates with email verification, session management, and login logs.\n\n### Troubleshooting 2FA Issues\n- **Lost Device**: Use recovery codes to access and reconfigure.\n- **Sync Problems**: Ensure your device's time is accurate.\n- **Disabling 2FA**: Requires admin approval or support assistance.\n- **Option Not Visible**: Check role permissions in **Settings → Security → Roles**.\n\n> Note: 2FA is recommended for all users, especially admins handling sensitive data. Combine with strong passwords and regular session reviews."
+      },
+      "login-activity": {
+        "id": "login-activity",
+        "title": "Check login activity",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["security", "audit"],
+        "body": "## Monitoring Login Activity\nRegularly reviewing login activity helps detect and prevent unauthorized access to your account.\n\n### Accessing Login Logs\n- Navigate to **Settings → Security → Logs** or profile sessions to view recent sign-ins, IP addresses, and device information.\n\n### Detailed Activity View\n- Logs display login times, locations, and devices, mirroring the sessions section in profiles.\n- Identify suspicious activity, such as logins from unknown locations.\n\n### Available Actions\n- Log out from specific sessions to secure your account.\n- Set up notifications for new login alerts.\n- Export logs for detailed auditing.\n\n### Best Practices for Security\n- Review logs frequently, especially after password changes.\n- Combine with 2FA and session timeouts for comprehensive protection.\n- Admins can access platform-wide logs in the Security section.\n- If unusual activity is detected, reset your password and contact support immediately.\n\n> Tip: Use this feature with device management to maintain account integrity."
+      },
+      "session-timeout": {
+        "id": "session-timeout",
+        "title": "Session timeout settings",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["security", "session"],
+        "body": "## Configuring Session Timeouts\nSession timeouts automatically log out inactive users, preventing unauthorized access.\n\n### Default and Custom Settings\n- The default idle timeout is 30 minutes.\n- Admins can adjust this per workspace in **Settings → Security**.\n\n### Configuration Steps\n- Set timeout duration based on security needs (shorter for sensitive data).\n- View active sessions with details in profile or security logs.\n\n### Impact on User Experience\n- Protects against access on unattended devices.\n- Requires re-login after timeout, potentially with 2FA.\n\n### Advanced Options\n- Customize timeouts for different roles via permissions.\n- Monitor effectiveness through login activity logs.\n- Integrate with device management for enhanced security.\n\n> Note: Balance security with usability; too short timeouts may frustrate users, too long increase risk."
+      },
+      "login-devices": {
+        "id": "login-devices",
+        "title": "Managing login devices",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["security", "devices"],
+        "body": "## Overview of Device Management\nManaging login devices ensures only authorized devices can access your account, enhancing overall security.\n\n### Viewing and Managing Devices\n- Access via **Settings → Security → Logs** or profile sessions to see remembered devices.\n- Enable device approval for new logins in high-security environments.\n\n### Management Steps\n- Review active devices with associated login details.\n- Revoke access to unwanted or lost devices immediately.\n\n### Key Features\n- Device approval process verifies new devices before granting access.\n- Integrates with 2FA and login activity monitoring.\n\n### Tips for Secure Device Management\n- Regularly clear old or unused devices.\n- If a device is lost, revoke access and change your password.\n- Admins can manage devices for other users via the Users section.\n\n> Tip: Combine device management with session timeouts and login logs for robust security."
+      },
+      "export-reports": {
+        "id": "export-reports",
+        "title": "Export reports",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["reports", "export"],
+        "body": "## Introduction to Exporting Reports\nExporting reports allows you to download data from analytics pages for further analysis or sharing.\n\n### Export Process\n- From pages like **Companies Insights**, click **Export** to choose formats (CSV/XLSX) or schedule PDF emails.\n\n### Step-by-Step Guide\n1. Select data range and apply filters (e.g., sectors, dates).\n2. Choose export format: CSV for data manipulation, PDF for presentations.\n\n### Use Cases\n- Export ESO performance metrics, funding trends, or sector supports.\n- Integrate with tools like Excel for advanced analysis.\n\n### Limitations and Tips\n- Large datasets may take time to process; schedule exports during off-peak hours.\n- Ensure you have the necessary permissions; verify roles if access is denied.\n- Combine with bulk import for end-to-end data management.\n\n> Note: Exported reports can be shared securely using the platform's sharing features."
+      },
+      "bulk-import": {
+        "id": "bulk-import",
+        "title": "Bulk import data",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["import", "csv"],
+        "body": "## Overview of Bulk Import\nBulk import allows adding multiple records at once, saving time for large datasets.\n\n### Import Steps\n1. Access the **Bulk Import** tool in directories or integrations (e.g., KoboToolbox Import).\n2. Download sample CSV templates.\n3. Populate the CSV with data (e.g., hub names, contacts, statuses).\n4. Upload the file and map columns to fields.\n5. Preview for errors and commit the import.\n\n### Best Practices\n- Validate data locally to prevent import failures.\n- For ESOs, include details like facilities and metadata.\n- Handle duplicates by merging or skipping entries.\n\n### Troubleshooting Common Issues\n- **Invalid Formats**: Ensure column headers match the template.\n- **Partial Imports**: Review import logs for failed rows and correct them.\n- **Integration Specifics**: Use Innovate Rwanda Import-Export for ecosystem-wide data.\n\n> Tip: Bulk import is ideal for initial data population or regular updates; combine with exports for data backups."
+      },
+      "sharing-reports": {
+        "id": "sharing-reports",
+        "title": "Sharing reports externally",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["reports", "sharing"],
+        "body": "## Secure Report Sharing\nSharing reports externally enables collaboration while maintaining data security through controlled access.\n\n### Sharing Options\n- Generate one-time or time-bound links from export menus.\n- Add passwords and watermarks for PDF files.\n- Set expiration dates and view limits for sensitive information like ESO impacts or performance data.\n\n### Use Cases\n- Share hub overviews or accelerator programs with external collaborators.\n- Allow partners to view data without full platform access.\n\n### Security Features\n- Track views and revoke shares at any time.\n- Use watermarks to deter unauthorized distribution.\n- Align sharing permissions with user roles.\n\n### Step-by-Step Sharing\n1. Export the report and select sharing options.\n2. Configure link settings (expiration, password).\n3. Distribute the link securely.\n\n> Note: Review content before sharing to ensure compliance with data protection policies."
+      },
+      "archiving-data": {
+        "id": "archiving-data",
+        "title": "Archiving old data",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["lifecycle", "archive"],
+        "body": "## Data Archiving Policy\nArchiving helps manage platform performance by moving stale data from active views while preserving it for future reference.\n\n### Archiving Process\n- Select items (e.g., old companies, investors) in directories.\n- Move to archive; data becomes hidden but remains searchable in archive sections.\n\n### Benefits of Archiving\n- Improves loading times and search efficiency.\n- Maintains historical records for compliance and analysis.\n\n### Restoration Procedures\n- Access the archive via settings and restore items with a single click.\n- Admins control archive access and permissions.\n- Use system backups for complete data recovery if needed.\n\n> Tip: Regularly archive inactive records to keep the platform optimized; review the archive periodically for potential restorations."
+      },
+      "report-schedules": {
+        "id": "report-schedules",
+        "title": "Automating report schedules",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["automation", "reports"],
+        "body": "## Automating Reports\nScheduling reports ensures regular delivery of key insights without manual intervention.\n\n### Setup Process\n- In analytics pages (e.g., Insights), set frequency (weekly/monthly) and recipients.\n- Customize content to include charts, tables, and summaries (e.g., ESO metrics).\n\n### Features\n- Include trends, distributions, and KPIs.\n- Pause, edit, or delete schedules as required.\n\n### Integration\n- Link schedules to notifications for delivery confirmations.\n- Combine with exports and backups for comprehensive data management.\n\n### Best Practices\n- Schedule reports during low-usage periods to avoid performance impacts.\n- Review scheduled content regularly to ensure relevance.\n\n> Note: Automated reports support proactive decision-making by providing timely, actionable data."
+      },
+      "add-team-members": {
+        "id": "add-team-members",
+        "title": "Add team members",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["collaboration", "users"],
+        "body": "## Adding Team Members\nInviting new team members expands collaboration capabilities on the platform.\n\n### Invitation Process\n- Navigate to **Users → Invite**.\n- Enter emails and assign roles (e.g., Viewer, Editor, Admin).\n- Invitees receive links to register and verify their accounts.\n\n### Management Features\n- Track pending invitations and resend if necessary.\n- Group users by roles for organized management.\n- Adjust roles post-invitation via **Settings → Security → Roles**.\n\n### Tips for Effective Team Addition\n- Use groups to manage users with similar roles.\n- Ensure new members complete the onboarding process.\n- Monitor activity after adding team members.\n\n> Note: Pre-assign roles to streamline access and maintain operational clarity."
+      },
+      "role-permissions": {
+        "id": "role-permissions",
+        "title": "Role-based permissions",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["rbac", "permissions"],
+        "body": "## Understanding Role-Based Permissions\nRoles define access levels and permissions, ensuring users have the appropriate capabilities.\n\n### Standard Roles\n- **User**: Basic read and limited write access.\n- **Admin**: Manage content, users, and settings.\n- **Superadmin**: Full platform-wide control.\n\n### Detailed Permissions\n- **System Roles**: Investor, Company Admin, etc.\n- **Ecosystem Roles**: Program Facilitator, Educator, etc.\n- **Permissions List**: Access to settings, user management, content editing, etc.\n\n### Assignment and Management\n- Assign roles during onboarding or in profiles.\n- View roles in the Roles tab.\n- Create or edit roles in **Settings → Security → Roles**: Name the role, select permissions, and submit.\n- Edit or delete existing roles as needed.\n\n### Auditing and Customization\n- Track changes via activity logs.\n- Fine-tune permissions per module for enhanced security.\n\n> Tip: Regularly review roles to align with organizational needs and maintain compliance."
+      },
+      "real-time-commenting": {
+        "id": "real-time-commenting",
+        "title": "Real-time commenting",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["comments", "collaboration"],
+        "body": "## Using Real-Time Commenting\nReal-time commenting enables collaborative discussions directly on platform content.\n\n### Commenting Usage\n- Mention users with @username in profiles, programs, or overviews.\n- Use threaded comments for organized discussions on performance tabs or partnerships.\n\n### Key Features\n- Live updates and syncing across all users.\n- Notifications for mentions to keep participants engaged.\n\n### Best Practices\n- Use comments for feedback on ESO impacts or services.\n- Resolve threads to close discussions and maintain clarity.\n- Integrate with other collaboration tools for comprehensive interactions.\n\n> Note: Keep comments professional and relevant to maximize teamwork efficiency."
+      },
+      "notifications": {
+        "id": "notifications",
+        "title": "Notification settings",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["notifications"],
+        "body": "## Configuring Notifications\nNotifications keep you informed of platform activities and updates.\n\n### Configuration Options\n- Access via profile notifications or the ring bell icon.\n- Set frequency: immediate or daily digest.\n\n### Notification Types\n- System alerts, reminders, and ESO-specific events (e.g., program changes).\n- Personalize notifications in preferences for relevance.\n\n### Management Tools\n- Mark notifications as read or delete old ones.\n- Test settings with sample alerts.\n- Admins can configure global notifications in **Settings → Notifications**.\n\n> Tip: Customize notifications to stay updated on critical events without being overwhelmed."
+      },
+      "slack-teams": {
+        "id": "slack-teams",
+        "title": "Integrating Slack/Teams",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["integrations", "slack", "teams"],
+        "body": "## Setting Up Integrations with Slack/Teams\nIntegrating with Slack or Microsoft Teams allows seamless delivery of notifications to team channels.\n\n### Setup Steps\n- Navigate to **Settings → Integrations** and authorize the app.\n- Select channels and configure modules (e.g., opportunities, updates).\n\n### Key Features\n- Push activity summaries and alerts for new programs or performance changes.\n- Support for two-way synchronization if available.\n\n### Troubleshooting\n- If disconnected, revoke and re-authorize access.\n- Verify bot permissions in the integrated app.\n- Use similar processes for other integrations like Zapier for advanced workflows.\n\n> Note: Integrations centralize communications, improving team productivity."
+      },
+      "system-status": {
+        "id": "system-status",
+        "title": "Check system status",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["status", "uptime"],
+        "body": "## Monitoring System Status\nRegularly checking system status helps you stay informed about platform availability and any ongoing issues.\n\n### Accessing Status Information\n- Navigate to **Support → System Status** to view real-time uptime and incident history.\n\n### Monitoring Features\n- Check current status and past downtime logs.\n- Subscribe to email notifications for updates on outages or maintenance.\n\n### Use Cases\n- Verify system status before performing critical actions like bulk imports or report exports.\n- Report new issues if the status indicates potential problems.\n\n### Additional Resources\n- Link with emergency contacts for immediate escalation.\n- Access detailed logs in **Settings → Security → Logs** for deeper analysis.\n\n> Tip: Frequent checks help plan activities around maintenance windows and minimize disruptions."
+      },
+      "emergency-contacts": {
+        "id": "emergency-contacts",
+        "title": "Emergency contacts",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["support", "contact"],
+        "body": "## Emergency Support Contacts\nUse these contacts for critical issues to get prompt assistance.\n\n### Contact Details\n- **Email**: support@example.org\n- **Phone**: +250 700 000 000\n- **Service Level Agreement (SLA)**: P1 issues resolved within 2 hours, P2 within 8 hours, P3 by the next business day.\n\n### When to Contact\n- Urgent problems like login failures, data loss, or system outages.\n- Provide detailed information: screenshots, URLs, and steps to reproduce the issue.\n\n### Support Process\n- Choose your preferred contact method.\n- Track your ticket status in the support portal.\n\n### Alternative Options\n- For non-urgent queries, refer to ask-question articles.\n- Use the 'Get in Touch' button in the support section.\n\n> Note: Include as much detail as possible to expedite resolution."
+      },
+      "ask-question-1": {
+        "id": "ask-question-1",
+        "title": "Ask a question or describe an issue (1)",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["support", "questions"],
+        "body": "## Submitting a Support Question\nProvide a clear description of your issue to receive effective assistance.\n\n### Submission Guidelines\n- Be specific: e.g., 'I can't edit hub details—receiving error message X'.\n- Include relevant context like your role, module affected, and recent actions.\n\n### Expected Response\n- Support will respond within the SLA timeframe.\n- Follow up if additional information is required.\n\n> Tip: Clear and precise descriptions lead to faster resolution."
+      },
+      "ask-question-2": {
+        "id": "ask-question-2",
+        "title": "Ask a question or describe an issue (2)",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["support", "questions", "evidence"],
+        "body": "## Enhanced Support Query Submission\nIncluding visual aids helps support understand and resolve issues more effectively.\n\n### Reporting with Details\n- Attach screenshots or screen recordings of errors.\n- Note your browser and version for technical issues.\n\n### Benefits\n- Visual aids allow support to diagnose and respond more quickly.\n\n> Note: Use this method for complex issues requiring evidence or detailed context."
+      },
+      "ask-question-3": {
+        "id": "ask-question-3",
+        "title": "Ask a question or describe an issue (3)",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["support", "follow-up"],
+        "body": "## Follow-Up Support Queries\nFor ongoing issues, support provides email follow-ups.\n\n### Follow-Up Process\n- Provide your email to receive detailed responses.\n- Check spam/junk folders if no reply is received.\n\n### Escalation\n- For urgent matters, use the emergency contacts listed in the support section.\n- Reference previous tickets to help support track your issue efficiently.\n\n> Tip: Always include ticket IDs or previous correspondence for clarity in follow-ups."
+      },
+      "keyboard-shortcuts": {
+        "id": "keyboard-shortcuts",
+        "title": "Keyboard shortcuts",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["productivity", "shortcuts"],
+        "body": "## Utilizing Keyboard Shortcuts\nKeyboard shortcuts improve navigation and efficiency across the platform.\n\n### Common Shortcuts\n- `/`: Focus on search bar.\n- `g c`: Navigate to Companies section.\n- `g i`: Navigate to Investors section.\n- `?`: Open the help menu.\n\n### Additional Shortcuts\n- `e`: Edit the current page or item.\n- `s`: Save changes.\n- `n`: Create a new item (e.g., program, project).\n\n### Customization and Learning\n- Enable or disable shortcuts in **Preferences → Keyboard Shortcuts**.\n- Learn more using the help overlay or platform documentation.\n\n> Note: Shortcuts may be platform-specific; test them in your environment."
+      },
+      "api-access": {
+        "id": "api-access",
+        "title": "API access",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["api", "developers"],
+        "body": "## Accessing the API\nThe API enables programmatic interactions with the platform for automation and integrations.\n\n### Getting Started\n- Request an API key in **Settings → Integrations**.\n- Keys include scopes (read/write) and have rate limits.\n\n### API Documentation\n- Endpoints are available for profiles, dashboards, and data retrieval.\n- Authenticate requests using the provided API key.\n\n### Limits and Usage\n- Default limit: 1000 calls per hour; contact support to request higher limits.\n- Integrate API credentials with external tools like RDB for automation.\n\n> Tip: Use the API to automate workflows, export/import data, and integrate with other systems."
+      },
+      "custom-templates": {
+        "id": "custom-templates",
+        "title": "Custom templates",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["templates"],
+        "body": "## Creating Custom Templates\nTemplates ensure consistent formatting in reports, messages, and content.\n\n### Template Creation\n- Access via **Content Studio → Messaging**.\n- Design templates with placeholders for dynamic data.\n\n### Usage Instructions\n- Apply templates to new items for uniform appearance.\n- Edit or share templates with team members as needed.\n\n### Advanced Features\n- Use HTML for styled email templates.\n- Integrate templates with exports, reports, and sharing.\n\n> Note: Keep templates updated to reflect evolving content and branding needs."
+      },
+      "bulk-import-tools": {
+        "id": "bulk-import-tools",
+        "title": "Bulk import tools",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["import", "tools"],
+        "body": "## Using Bulk Import Tools\nBulk import tools enable efficient entry of multiple records simultaneously.\n\n### Tool Overview\n- Download sample CSV templates and validate data formats locally.\n- Supports importing data for ESOs, companies, investors, and other records.\n\n### Import Process\n- Upload files via **Integrations → Bulk Import** (e.g., KoboToolbox).\n- Map columns to platform fields, preview entries, and commit the import.\n- Rollback in case of errors.\n\n### Integration\n- Combine with archiving, backups, and exports for comprehensive data management.\n\n> Tip: Validate your data carefully before import to prevent errors; use templates for consistency."
+      },
+      "system-backup": {
+        "id": "system-backup",
+        "title": "System backup options",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["backup", "disaster-recovery"],
+        "body": "## System Backup and Recovery\nRegular backups protect against data loss and ensure recovery in case of incidents.\n\n### Backup Options\n- Daily snapshots retained for 30 days.\n- Manual backups available via **Admin Settings → Backup**.\n- Optional cloud storage integrations for off-site backup.\n\n### Recovery Process\n- Restore from snapshots when issues occur.\n- Periodically test restores to ensure reliability.\n\n### Best Practices\n- Align backup schedules with automated reports.\n- Contact support for full data exports if required.\n- Maintain a secure backup environment.\n\n> Note: Regular backups are essential for business continuity and disaster recovery planning."
+      },
+      "companies-insights": {
+        "id": "companies-insights",
+        "title": "Companies → Insights",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["companies", "insights", "metrics"],
+        "body": "## Exploring Companies Insights\nAccess this section via **Companies → Insights** in the left navigation menu. It provides key statistics and visual analyses for ventures, founders, and technologies.\n\n### Summary Metrics\n- **Number of Ventures**: Total registered companies.\n- **Number of Co-founders**: Total individuals involved as co-founders.\n- **Average Co-founders per Venture**: Statistical average.\n- **Gender Distribution**: Breakdown by gender.\n\n### Insights and Visualizations\n- **Expansion/Operating Countries**: Interactive maps showing geographical spread.\n- **Technology Analysis**: Bar charts for categories like software, AI, hardware.\n- **Additional Insights**: Funding trends, sector distributions (navigate via dots for more views).\n\n### Venture Assessment Table\n- Searchable table including venture name, sectors, technologies, founded year, funding, team size, climate focus, and status.\n- Features: Search bar, filters (All, Active, Pending, Suspended, Deleted), column customization, three-dot menu for actions (View Assessment, View Website).\n- Admins have access to advanced filters and cohort comparisons.\n\n> Tip: Use insights to identify trends and opportunities in the company ecosystem."
+      },
+      "investors-directory": {
+        "id": "investors-directory",
+        "title": "Investors → Directory",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["investors", "directory"],
+        "body": "## Guide to Investors Directory\nAccess via **Investors → Directory** to manage and browse investor profiles, including funds, angels, and DFIs. Track investment theses, ticket sizes, and geographical focus.\n\n### Navigation Overview\n- **Add Investor Button**: Top-right corner.\n- **Search Bar**: Filter investors by name or criteria.\n- **Investor Table Columns**: Name (with logo), Type, Visibility, Verified status, Status, Actions (View, Edit, Delete).\n\n### Viewing Investor Details\n- Click eye icon (👁) to view sidebar with tabs: Overview, Profiles, General Info, Addresses, Preferences, Holdings, Portfolio, Instruments, Partnerships, Members, References, Impacts, Metrics, Reputations, Engagement, Feedback, Programs, Links, Resources.\n\n### Editing Investors\n1. Click pencil icon (✏️) next to the record.\n2. Update fields in the form (Name, Type, Contact, etc.).\n3. Click 'Save changes'.\n\n### Deleting Investors\n1. Click trash icon (🗑).\n2. Confirm deletion in the popup.\n\n### Customization\n- Use 'Customize Columns' to show/hide table columns.\n\n### Creating a New Investor\n1. Click '+ Add Investor'.\n2. Fill required fields (Company, Display Name, Profile Image, Email, Phone, Website, Visibility, Status, Founded Date, Investor Types).\n3. Submit to create the investor.\n\n### Best Practices\n- Keep data accurate and up-to-date.\n- Regularly verify profiles.\n- Customize views to focus on relevant data.\n\n> Note: Admin permissions are required for full management."
+      },
+      "enablers-assessment": {
+        "id": "enablers-assessment",
+        "title": "Enablers → Assessment",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["enablers", "eso", "assessment"],
+        "body": "## Guide to Enablers Assessment\nAccess via **Enablers → Assessment** to evaluate ESOs like hubs and incubators using scorecards and KPIs (programs, jobs, cohorts, capital).\n\n### Assessment Interface\n- **ESO Insight Data**: Charts for supported vs. pipeline startups, job creation, program linkages.\n- **Assessment Table**: Columns for full name, email/phone, organization, actions; includes filters, column customization, and search.\n- **View Person Data**: Details include contact, organization, years operational, mission, ecosystem role, supported sectors/services, flagship programs.\n\n### Managing Hubs\n- Navigate to **Enablers → Hubs**.\n- Table: Organization, founded year, contact, status, actions; includes search and column customization.\n- **Add New Hub**: Enter basic info (name, logo, description), contact/status (email, phone, website, capacity, year, operational status), facilities/metadata.\n- **Actions**: View details, edit, visit website.\n- Preview and confirm before creation.\n\n> Tip: Use assessments to track ESO performance and impact."
+      },
+      "opportunities-tenders": {
+        "id": "opportunities-tenders",
+        "title": "Opportunities → Tenders",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["opportunities", "tenders", "rfp"],
+        "body": "## Managing Tenders in Opportunities\nAccess via **Opportunities → Tenders** to publish and manage RFPs/RFQs.\n\n### Tender Management\n- List columns: Name, budget, category, status, published/updated dates, actions.\n- **View Website**: Direction icon.\n- **View Details**: Eye icon for overview (contact, deadline, budget, sectors), info (edit/delete), engagement (add/edit/delete).\n- **Edit Tender**: Update details and save.\n- **Delete Tender**: Confirm deletion.\n- **Create Tender**: Fill form and submit.\n\n### Features\n- Set deadlines, criteria, and evaluations.\n- Send notifications for updates.\n- Link tenders to programs or events.\n- Use search for efficient management.\n\n> Note: Tenders facilitate vendor bids and administrative awards."
+      },
+      "content-studio-basics": {
+        "id": "content-studio-basics",
+        "title": "Content Studio → Basics",
+        "format": "md",
+        "updatedAt": "2025-10-04",
+        "tags": ["cms", "content-studio"],
+        "body": "## Basics of Content Studio\nManage site content, messaging, feeds, and more via **Content Studio**.\n\n### Site Management\n- Edit sections like Hero, About.\n- Select section/language, update title, subtitle, animations.\n- Preview and save changes (auto-save supported).\n\n### Messaging Tools\n- Manage templates and campaigns.\n- Preview and edit templates (subject, body, placeholders).\n- Use HTML for styled content.\n\n### Additional Tools\n- WYSIWYG editor for easy editing.\n- Version control for tracking changes.\n\n### Use Cases\n- Customize ESO overviews or newsroom content.\n- Maintain consistent messaging across the platform.\n\n> Tip: Use Content Studio for all content-related updates."
+      }
+    },
+    "search": {
+      "strategy": "precomputed",
+      "entries": {
+        "user-onboarding": [
+          ["onboarding", 6],
+          ["verify", 2],
+          ["profile", 1]
+        ],
+        "profile-setup": [
+          ["profile", 5],
+          ["avatar", 1],
+          ["timezone", 1]
+        ],
+        "user-registration": [
+          ["signup", 4],
+          ["verification", 3]
+        ],
+        "setting-preferences": [
+          ["preferences", 4],
+          ["language", 2],
+          ["timezone", 2]
+        ],
+        "company-registration": [
+          ["company", 4],
+          ["registration", 4],
+          ["directory", 1]
+        ],
+        "password-reset": [
+          ["password", 6],
+          ["reset", 5]
+        ],
+        "enable-2fa": [
+          ["2fa", 6],
+          ["totp", 3],
+          ["security", 2]
+        ],
+        "login-activity": [
+          ["login", 4],
+          ["activity", 3],
+          ["audit", 2]
+        ],
+        "session-timeout": [
+          ["session", 4],
+          ["timeout", 3]
+        ],
+        "login-devices": [
+          ["devices", 4],
+          ["security", 2]
+        ],
+        "export-reports": [
+          ["export", 5],
+          ["reports", 4],
+          ["csv", 2]
+        ],
+        "bulk-import": [
+          ["import", 5],
+          ["csv", 4]
+        ],
+        "sharing-reports": [
+          ["sharing", 4],
+          ["reports", 3],
+          ["links", 2]
+        ],
+        "archiving-data": [
+          ["archive", 4],
+          ["lifecycle", 2]
+        ],
+        "report-schedules": [
+          ["scheduled", 4],
+          ["reports", 3],
+          ["email", 2]
+        ],
+        "add-team-members": [
+          ["invite", 4],
+          ["users", 3]
+        ],
+        "role-permissions": [
+          ["roles", 5],
+          ["permissions", 4],
+          ["rbac", 3]
+        ],
+        "real-time-commenting": [
+          ["comments", 5],
+          ["realtime", 3]
+        ],
+        "notifications": [
+          ["notifications", 5],
+          ["email", 2]
+        ],
+        "slack-teams": [
+          ["slack", 4],
+          ["teams", 4],
+          ["integrations", 3]
+        ],
+        "system-status": [
+          ["status", 4],
+          ["uptime", 3]
+        ],
+        "emergency-contacts": [
+          ["emergency", 4],
+          ["contacts", 3]
+        ],
+        "ask-question-1": [
+          ["support", 3],
+          ["question", 2]
+        ],
+        "ask-question-2": [
+          ["support", 3],
+          ["screenshots", 2]
+        ],
+        "ask-question-3": [
+          ["support", 3],
+          ["email", 2]
+        ],
+        "keyboard-shortcuts": [
+          ["shortcuts", 5],
+          ["keyboard", 4]
+        ],
+        "api-access": [
+          ["api", 6],
+          ["developers", 3],
+          ["key", 2]
+        ],
+        "custom-templates": [
+          ["templates", 4],
+          ["content", 2]
+        ],
+        "bulk-import-tools": [
+          ["import", 5],
+          ["tools", 3]
+        ],
+        "system-backup": [
+          ["backup", 5],
+          ["recovery", 3]
+        ],
+        "companies-insights": [
+          ["companies", 5],
+          ["insights", 5],
+          ["metrics", 3]
+        ],
+        "investors-directory": [
+          ["investors", 5],
+          ["directory", 4]
+        ],
+        "enablers-assessment": [
+          ["enablers", 5],
+          ["assessment", 4],
+          ["eso", 3]
+        ],
+        "opportunities-tenders": [
+          ["opportunities", 5],
+          ["tenders", 5],
+          ["rfp", 3]
+        ],
+        "content-studio-basics": [
+          ["content", 4],
+          ["studio", 4],
+          ["cms", 3]
+        ]
+      },
+      "stopWords": ["the", "a", "an", "and", "or", "to", "of", "for", "in"]
+    }
+  }
 }
