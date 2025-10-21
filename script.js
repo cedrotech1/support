@@ -208,13 +208,13 @@ function markdownToHtml(markdown) {
         .replace(/^# (.*$)/gm, '<h1 class="text-2xl font-bold mb-4 mt-6">$1</h1>')
         .replace(/^## (.*$)/gm, '<h2 class="text-xl font-semibold mt-6 mb-3 pb-2 border-b border-gray-100">$1</h2>')
         .replace(/^### (.*$)/gm, '<h3 class="text-lg font-medium mt-5 mb-2">$1</h3>');
-    
+
     // Process lists
     html = html
         .replace(/^\s*[-*+] (.*$)/gm, '<li class="ml-4 mb-1">$1</li>')  // Unordered lists
         .replace(/^\s*\d+\. (.*$)/gm, '<li class="ml-4 mb-1">$1</li>'); // Ordered lists
-    
-    // Wrap list items in <ul> or <ol>
+
+    // Process images
     html = html.replace(/(<li>.*<\/li>)/gs, function(match) {
         return match.includes('1. ') ? 
             '<ol class="list-decimal pl-6 my-2">' + match + '</ol>' :
@@ -228,6 +228,9 @@ function markdownToHtml(markdown) {
         .replace(/~~(.*?)~~/g, '<s>$1</s>')  // Strikethrough
         .replace(/`([^`]+)`/g, '<code class="bg-gray-100 text-red-600 px-1.5 py-0.5 rounded text-sm font-mono">$1</code>');  // Inline code
     
+    // Images
+    html = html.replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1" class="my-4 rounded-lg shadow" />');
+
     // Process paragraphs and line breaks
     html = html
         .replace(/\n\n/g, '</p><p class="my-4 leading-relaxed">')
@@ -269,6 +272,7 @@ function loadContent(path) {
                 // Blockquotes
                 .replace(/^>\s+(.*$)/gm, '<blockquote class="border-l-4 border-gray-300 pl-4 my-3 text-gray-600">$1</blockquote>')
                 // Paragraphs and line breaks
+                .replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1" class="my-4 rounded-lg shadow" />')
                 .replace(/\n\n/g, '</p><p class="my-3">')
                 .replace(/\n/g, '<br>');
             
